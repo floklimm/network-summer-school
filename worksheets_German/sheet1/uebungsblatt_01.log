@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.21)  31 OCT 2017 14:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.21)  31 OCT 2017 15:14
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -656,188 +656,88 @@ LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
 (Font)              scaled to size 6.72005pt on input line 33.
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
 (Font)              scaled to size 4.80003pt on input line 33.
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
-
- []
-
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 48.
+(Font)              scaled to size 7.68005pt on input line 49.
+
 [1
 
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./code/graph_darstellen.py)
-Overfull \hbox (15.97673pt too wide) in paragraph at lines 99--100
-\T1/txtt/m/n/10 Wir wollen untersuchen wie die Anzahl $\OML/mdbch/m/it/10 m$ \T
-1/txtt/m/n/10 von Kanten im Netzwerk sich
+Overfull \hbox (1.94046pt too wide) in paragraph at lines 75--76
+\T1/mdbch/m/n/10 hängigkeit von der An-zahl der Knoten $\OML/mdbch/m/it/10 n$ \
+T1/mdbch/m/n/10 ver-hält. Führe dafür die fol-gen-den Schritte
  []
 
 
-Overfull \hbox (2.99034pt too wide) in paragraph at lines 99--100
-\T1/txtt/m/n/10 in Abhängigkeit von der Anzahl der Knoten $\OML/mdbch/m/it/10 n
-$ \T1/txtt/m/n/10 verhält. Führe dafür
+Overfull \hbox (10.31944pt too wide) in paragraph at lines 81--82
+[]\T1/mdbch/m/n/10 Vergleiche diese Werte mit den am Vor-mit-tag er-mit-tel-ten
+ an-a-lytis-chen Formeln. 
  []
 
 [2]
-LaTeX Font Info:    Font shape `T1/txtt/m/it' in size <10> not available
-(Font)              Font shape `T1/txtt/m/sl' tried instead on input line 102.
-
-Overfull \hbox (1.4128pt too wide) in paragraph at lines 102--103
-[]\T1/txtt/m/n/10 Schreibe eine Funktion die als Input eine Adjazenzmatrix und
- []
-
-
-Overfull \hbox (43.41267pt too wide) in paragraph at lines 102--103
-\T1/txtt/m/n/10 als Output die Anzahl von Kanten hat. (\T1/txtt/m/sl/10 Hinweis
-: Die numpy-Funktion
- []
-
-
-Overfull \hbox (6.99043pt too wide) in paragraph at lines 103--104
-[]\T1/txtt/m/n/10 Nutze eine FOR-Schleife um Netzwerke variierender Grösse $\OM
-L/mdbch/m/it/10 n$ \T1/txtt/m/n/10 zu
- []
-
-
-Overfull \hbox (43.41267pt too wide) in paragraph at lines 105--106
-[]\T1/txtt/m/n/10 Vergleiche diese Werte mit den am Vormittag ermittelten analy
-tischen
- []
-
-
-Overfull \hbox (7.91267pt too wide) in paragraph at lines 113--114
-\T1/txtt/m/n/10 Bis jetzt haben wir uns nur mit Netzwerkmodellen beschäftigt. N
-un
- []
-
-
-Overfull \hbox (39.41258pt too wide) in paragraph at lines 113--114
-\T1/txtt/m/n/10 wollen wir diese real existierenden (empirischen) Netzwerke ver
-gleichen. 
- []
-
-
-Overfull \hbox (23.66263pt too wide) in paragraph at lines 124--130
-\T1/txtt/m/n/10 Ähnlich wie die bipartiten Netzwerke mit zwei Gruppen von Knote
-n gibt
- []
-
-
-Overfull \hbox (18.83627pt too wide) in paragraph at lines 124--130
-\T1/txtt/m/n/10 es auch multipartite (oder $\OML/mdbch/m/it/10 p$\T1/txtt/m/n/1
-0 -partite) Netzwerke mit meheren Gruppen.
- []
-
-
-Overfull \hbox (18.83627pt too wide) in paragraph at lines 124--130
-\T1/txtt/m/n/10 Schreibe eine Funktion die solche $\OML/mdbch/m/it/10 p$\T1/txt
-t/m/n/10 -partiten Netzwerke erzeugt wobei
- []
-
-
-Overfull \hbox (2.99034pt too wide) in paragraph at lines 124--130
-\T1/txtt/m/n/10 Finde analytische Formeln für die Anzahl $\OML/mdbch/m/it/10 n$
- \T1/txtt/m/n/10 der Knoten im gesamten
- []
-
-
-Overfull \hbox (5.47676pt too wide) in paragraph at lines 124--130
-\T1/txtt/m/n/10 Netzwerk und der Anzahl $\OML/mdbch/m/it/10 m$ \T1/txtt/m/n/10 
-der Kanten und überprüfe sie numerisch. 
- []
-
-
-Overfull \hbox (25.50708pt too wide) in paragraph at lines 134--135
-\T1/txtt/m/n/10 Beweise, dass jeder Graph $\OML/mdbch/m/it/10 G$ \T1/txtt/m/n/1
-0 der mehr als einem Knoten mindestens zwei
- []
-
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 138.
+(Font)              scaled to size 11.52008pt on input line 125.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 138.
+(Font)              scaled to size 7.68005pt on input line 125.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 138.
+(Font)              scaled to size 5.76004pt on input line 125.
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 11.52008pt on input line 138.
+(Font)              scaled to size 11.52008pt on input line 125.
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 7.68005pt on input line 138.
+(Font)              scaled to size 7.68005pt on input line 125.
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 5.76004pt on input line 138.
+(Font)              scaled to size 5.76004pt on input line 125.
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 138.
+(Font)              scaled to size 11.52008pt on input line 125.
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 138.
+(Font)              scaled to size 7.68005pt on input line 125.
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 138.
+(Font)              scaled to size 5.76004pt on input line 125.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 138.
+(Font)              scaled to size 11.52008pt on input line 125.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 138.
+(Font)              scaled to size 7.68005pt on input line 125.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 138.
+(Font)              scaled to size 5.76004pt on input line 125.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 138.
+(Font)              scaled to size 11.52008pt on input line 125.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 138.
+(Font)              scaled to size 7.68005pt on input line 125.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 138.
+(Font)              scaled to size 5.76004pt on input line 125.
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 138.
+(Font)              scaled to size 11.52008pt on input line 125.
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 138.
+(Font)              scaled to size 7.68005pt on input line 125.
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 138.
+(Font)              scaled to size 5.76004pt on input line 125.
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 138.
+(Font)              scaled to size 11.52008pt on input line 125.
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 138.
+(Font)              scaled to size 7.68005pt on input line 125.
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 138.
-
-Overfull \hbox (33.72348pt too wide) in paragraph at lines 139--140
-\T1/txtt/m/n/10 Ein Graph ist $\OML/mdbch/m/it/10 r$\T1/txtt/m/n/10 -regulär we
-nn jeder Knoten den Grad $\OML/mdbch/m/it/10 r$ \T1/txtt/m/n/10 besitzt. Beweis
-e,
- []
-
-
-Overfull \hbox (18.82794pt too wide) in paragraph at lines 139--140
-\T1/txtt/m/n/10 dass es genau dann einen $\OT1/mdbch/m/n/10 3$\T1/txtt/m/n/10 -
-regulären Graphen mit $\OML/mdbch/m/it/10 n$ \T1/txtt/m/n/10 Knoten gibt, wenn
- []
-
-
-Overfull \hbox (60.41252pt too wide) in paragraph at lines 146--147
-\T1/txtt/m/n/10 Implementieren den Dijkstra-Algorithmus. Überprüfe ob seine Zei
-tkomplexität
- []
-
-[3] (./uebungsblatt_01.aux) )
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 93 ({)
-### bottom level 
+(Font)              scaled to size 5.76004pt on input line 125.
+ [3] (./uebungsblatt_01.aux) ) 
 Here is how much of TeX's memory you used:
  6648 strings out of 493089
- 100139 string characters out of 6134841
+ 100125 string characters out of 6134841
  264633 words of memory out of 5000000
- 9983 multiletter control sequences out of 15000+600000
- 49298 words of font info for 93 fonts, out of 8000000 for 9000
+ 9982 multiletter control sequences out of 15000+600000
+ 49149 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,6n,72p,340b,1251s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/ly1/texnans
-i.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.p
-fb></usr/local/texlive/2015/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr
-7t.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/mathdesign/mdbch/
-md-chr7y.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/mathdesign/
-mdbch/md-chri7m.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/txfo
-nts/t1xbtt.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/txfonts/t
-1xtt.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/txfonts/t1xtt.p
-fb>
-Output written on uebungsblatt_01.pdf (3 pages, 62856 bytes).
+ 42i,7n,72p,340b,1251s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvi
+ps/ly1/texnansi.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/bitstrea/ch
+arter/bchr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/bitstrea/chart
+er/bchri8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/mathdesig
+n/mdbch/md-chr7t.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/mat
+hdesign/mdbch/md-chr7y.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publ
+ic/mathdesign/mdbch/md-chri7m.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
+e1/public/txfonts/t1xbtt.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
+blic/txfonts/t1xtt.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/t
+xfonts/t1xtt.pfb>
+Output written on uebungsblatt_01.pdf (3 pages, 65239 bytes).
 PDF statistics:
  47 PDF objects out of 1000 (max. 8388607)
  33 compressed objects within 1 object stream

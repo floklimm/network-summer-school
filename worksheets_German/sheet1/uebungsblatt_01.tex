@@ -23,19 +23,19 @@ und zu untersuchen. Die folgende Funktion {\tt pfadgraph} in der Datei {\tt pfad
 
 
  \subexercise[%
-  topic=Programm verstehen und verändern,
+  topic=Programm verstehen und ver\"andern,
     ]
 
-Gehe Zeile für Zeile über den Programm-Code um ihn zu verstehen. Beantworte insbesondere die folgenden Fragen:
+Gehe Zeile f\"ur Zeile \"uber den Programm-Code um ihn zu verstehen. Beantworte insbesondere die folgenden Fragen:
 
 \begin{enumerate}
 \item Was sind In- und Output der Funktion {\tt pfadgraph( n )}?
-\item Wie sieht die Adjazenzmatrix in jedem Schritt der FOR-Schleife aus? Überprüfe deine Vermutung indem du nach Zeile $8$ die folgende Zeile einfügst {\tt print(A)}
+\item Wie sieht die Adjazenzmatrix in jedem Schritt der FOR-Schleife aus? \"uberpr\"ufe deine Vermutung indem du nach Zeile $8$ die folgende Zeile einf\"ugst {\tt print(A)}
 \item Warum geht die FOR-Schleife von $0$ bis $n-1$?
-\item Was passiert in Zeile $10$? Wie würde die Adjazenzmatrix aussehen wenn diese Zeile nicht eingefügt wäre? Überprüfe deine Vermutung indem du die Zeile auskommentierst.
+\item Was passiert in Zeile $10$? Wie w\"urde die Adjazenzmatrix aussehen wenn diese Zeile nicht eingef\"ugt w\"are? \"uberpr\"ufe deine Vermutung indem du die Zeile auskommentierst.
 \end{enumerate}
 
-Das gute an Funktionen ist, dass wir sie wieder und wieder verwenden können. Erweitere das obige Programm, so dass dir nach der Adjazenzmatrix eines Pfades bestehend aus 10 Knoten auch den für 15 Knoten ausgibt.\\
+Das gute an Funktionen ist, dass wir sie wieder und wieder verwenden k\"onnen. Erweitere das obige Programm, so dass dir nach der Adjazenzmatrix eines Pfades bestehend aus 10 Knoten auch den f\"ur 15 Knoten ausgibt.
 
  \subexercise[%
   topic=Netzwerke erstellen,
@@ -46,72 +46,62 @@ Nutze das obige Programm als Ausgangspunkt um Funktionen zu schreiben die die fo
 \begin{enumerate}
 \item Nullgraph
 \item Kreisgraph
-\item Vollständiger Graph
-\item Vollständiger Bipartiter Graph mit Gruppengrössen $m$ und $n$
+\item Vollst\"andiger Graph
+\item Vollst\"andiger Bipartiter Graph mit Gruppengr\"o\ss en $m$ und $n$
 \end{enumerate}
-
-
-
-
-  %\subexercise[%
-  %topic=Netzwerke erstellen,
-    %]
 
 
 \exercise[%
   topic=Netzwerke mit Python darstellen
     ]
 
-Wir erstellen Graphen meist als Adjazenzmatrix. Diese sind nützlich um die sie weiter mathematish zu analysieren. Manchmal ist es allerdings von Vorteil ein Netzwerk darzustellen. Hierzu können wir zum Beispiel die Bibliothek {\tt networkx} benutzen:  
+Wir erstellen Graphen meist als Adjazenzmatrix. Diese sind n\"utzlich um die sie weiter mathematisch zu analysieren. Manchmal ist es allerdings von Vorteil ein Netzwerk darzustellen. Hierzu k\"onnen wir zum Beispiel die Bibliothek {\tt networkx} benutzen:  
 
 \lstinputlisting{./code/graph_darstellen.py}
 
-Wir müssen nur die nötigen Bibliotheken laden und die Adjazenzmatrix in ein anderes Objekt umwandeln. Dieses kann dann von der Funktion {\tt draw()} genutzt werden um eine Darstellung zu erzeugen.\\
-Nutze {\tt networkx} um verschiedene Graphen der Grösse $n=8$ darzustellen.
+Wir m\u"ssen nur die n\"otigen Bibliotheken laden und die Adjazenzmatrix in ein anderes Objekt umwandeln. Dieses kann dann von der Funktion {\tt draw()} genutzt werden um eine Darstellung zu erzeugen.
+
+Nutze {\tt networkx} um verschiedene Graphen der Gr\"o\ss e $n=8$ darzustellen.
 
   \exercise[%
   topic=Netzwerke mit Python untersuchen
     ]
-Nun werden wir die in Aufgabe $1$ erstellten Funktionen nutzen um diese Netzwerke zu untersuchen. Nutze die Funktion {\tt loadtxt} um eine Adjazenzmatrix aus einer Textdatei zu laden.
-
-\begin{lstlisting}
-H = np.loadtxt("hennen.txt")
-\end{lstlisting}
-
-Bei dem Netzwerk handelt es sich um ein Netzwerk das angibt welche von $32$ Hühner miteinander kämpfen.\\
-Zähle die Kanten, stelle das Netzwerk dar und vergleiche mit den
-Netzwerkmodellen die wir eingeführt haben. Welches der Modelle
-beschreibt diese Daten am besten?\\
-Wiederhole dies mit einem zweiten Netzwerk {\tt florence.txt}. Ist eines
-der Modelle in der Lage die Daten gut zu beschreiben?\\
-Dieses Netzwerk beschreibt die ehelichen Beziehungen von Adelsfamilien
-im Florenz des 13. Jahrhunderts. In der Datei 
-   {\tt florence\_families.txt} 
-   findet ihr die Namen der Adelsgeschlechter (Zeilennummer
-   korrespondiert mit Knotennummer im Netzwerk). Welche Familie hat die
-   meisten Verbindungen?
-{\tt
+Nun werden wir die in Aufgabe $1$ erstellten Funktionen nutzen um diese Netzwerke zu untersuchen.
 
  \subexercise[%
-  topic=Kanten zählen,
+  topic=Kanten z\"ahlen,
     ]
 
-Wir wollen untersuchen wie die Anzahl $m$ von Kanten im Netzwerk sich in Abhängigkeit von der Anzahl der Knoten $n$ verhält. Führe dafür die folgenden Schritte aus:
+Wir wollen untersuchen wie die Anzahl $m$ von Kanten im Netzwerk sich in Abh\"angigkeit von der Anzahl der Knoten $n$ verh\"alt. F\"uhre daf\"ur die folgenden Schritte aus:
 
 \begin{enumerate}
-\item Schreibe eine Funktion die als Input eine Adjazenzmatrix und als Output die Anzahl von Kanten hat. (\emph{Hinweis: Die numpy-Funktion sum() könnte nützlich sein.})
-\item Nutze eine FOR-Schleife um Netzwerke variierender Grösse $n$ zu erstellen und deren Kanten zu zählen.
-\item Nutze maplotlib um diese Messungen darzustellen. 
+\item Schreibe eine Funktion die als Input eine Adjazenzmatrix und als Output die Anzahl von Kanten hat. (\emph{Hinweis: Die numpy-Funktion {\tt sum()} k\"onnte n\"uizlich sein.})
+\item Nutze eine FOR-Schleife um Netzwerke variierender Gr\"o\ss e $n$ zu erstellen und deren Kanten zu z\"ahlen.
+\item Nutze {\tt maplotlib} um diese Messungen darzustellen. 
 \item Vergleiche diese Werte mit den am Vormittag ermittelten analytischen Formeln.
 \end{enumerate}
+
 
 
  \subexercise[%
   topic=Vergleich mit empirischen Netzwerken,
     ]
 
-Bis jetzt haben wir uns nur mit Netzwerkmodellen beschäftigt. Nun wollen wir diese real existierenden (empirischen) Netzwerke vergleichen.
+Bis jetzt haben wir uns nur mit Netzwerkmodellen besch\"aftigt. Nun wollen wir diese real existierenden (empirischen) Netzwerke vergleichen.
 
+Nutze die Funktion {\tt loadtxt} um eine Adjazenzmatrix aus einer Textdatei zu laden.
+
+\begin{lstlisting}
+H = np.loadtxt("hennen.txt")
+\end{lstlisting}
+
+Bei dem Netzwerk handelt es sich um ein Netzwerk das angibt welche von $32$ H\"uhner miteinander k\"ampfen.
+
+Z\"ahle die Kanten, stelle das Netzwerk dar und vergleiche mit den Netzwerkmodellen die wir eingef\"uhrt haben. Welches der Modelle beschreibt diese Daten am besten?
+
+Wiederhole dies mit einem zweiten Netzwerk {\tt florence.txt}. Ist eines der Modelle in der Lage die Daten gut zu beschreiben?
+
+Dieses Netzwerk beschreibt die ehelichen Beziehungen von Adelsfamilien im Florenz des 13. Jahrhunderts. In der Datei {\tt florence\_families.txt} findet ihr die Namen der Adelsgeschlechter (Zeilennummer korrespondiert mit Knotennummer im Netzwerk). Welche Familie hat die meisten Verbindungen?
 
 \exercise[%
   topic=Zusatzaufgaben
@@ -121,12 +111,9 @@ Bis jetzt haben wir uns nur mit Netzwerkmodellen beschäftigt. Nun wollen wir di
   topic=Multipartite Netzwerke,
     ]
 		
-    Ähnlich wie die bipartiten Netzwerke mit zwei Gruppen von Knoten
-    gibt es auch multipartite (oder $p$-partite) Netzwerke mit meheren
-    Gruppen. Schreibe eine Funktion die solche $p$-partiten Netzwerke
-    erzeugt wobei jede der $p$ Gruppen die gleiche Grö\ss e $g$ besitzt.\\
-    Finde analytische Formeln für die Anzahl $n$ der Knoten im gesamten
-    Netzwerk und der Anzahl $m$ der Kanten und überprüfe sie numerisch.
+\"Ahnlich wie die bipartiten Netzwerke mit zwei Gruppen von Knoten gibt es auch multipartite (oder $p$-partite) Netzwerke mit mehreren Gruppen. Schreibe eine Funktion die solche $p$-partiten Netzwerke erzeugt wobei jede der $p$ Gruppen die gleiche Gr\"o\ss e $g$ besitzt.
+
+Finde analytische Formeln f\"ur die Anzahl $n$ der Knoten im gesamten Netzwerk und der Anzahl $m$ der Kanten und \"uberpr\"ufe sie numerisch.
 		
 		\subexercise[%
   topic=Knoten mit gleichem Grad,
@@ -134,16 +121,16 @@ Bis jetzt haben wir uns nur mit Netzwerkmodellen beschäftigt. Nun wollen wir di
 		Beweise, dass jeder Graph $G$ der mehr als einem Knoten mindestens zwei Knoten mit gleichem Grad besitzt.
  
 \subexercise[%
-  topic=$3$-reguläre Graphen,
+  topic=$3$-regul\"are Graphen,
     ]
-		Ein Graph ist $r$-regulär wenn jeder Knoten den Grad $r$ besitzt. Beweise, dass es genau dann einen $3$-regulären Graphen mit $n$ Knoten gibt, wenn $n>3$ und $n$ gerade ist.
+		Ein Graph ist $r$-regul\"ar wenn jeder Knoten den Grad $r$ besitzt. Beweise, dass es genau dann einen $3$-regul\"aren Graphen mit $n$ Knoten gibt, wenn $n>3$ und $n$ gerade ist.
 		
 		
 		\subexercise[%
   topic=Dijkstra-Algorithmus,
     ]
 		
-		Implementieren den Dijkstra-Algorithmus. Überprüfe ob seine Zeitkomplexität $\mathcal{O}(N^2)$
+		Implementieren den Dijkstra-Algorithmus. \"uberpr\"ufe ob seine Zeitkomplexit\"at $\mathcal{O}(N^2)$ betr\"agt.
 		
 		%\exercise[%
   %topic=Netzwerke mit Python untersuchen
