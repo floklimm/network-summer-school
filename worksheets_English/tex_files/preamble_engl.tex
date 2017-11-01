@@ -1,0 +1,81 @@
+\documentclass[a4paper]{exercisesheet}
+
+%\usepackage{mathpazo}
+%\usepackage{mathptmx}
+%\usepackage{newtxmath}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{luainputenc}
+\usepackage[charter]{mathdesign}
+\let\sfdefault=\rmdefault
+\def\ttdefault{txtt}
+
+\usepackage[dvipsnames]{xcolor}
+%\colorlet{maincolor}{blue!50!black}
+\colorlet{maincolor}{black}
+
+\usepackage{listings}
+\usepackage{amsmath}
+%\lstset{
+%  frame=lines,
+%  backgroundcolor=\color{maincolor!15},
+%  rulecolor=\color{maincolor},
+%  language=Python
+%  keywordstyle=\bfseries\color{maincolor},
+%  numbers=left,
+%  numberstyle=\scriptsize\color{maincolor!70},
+%}
+
+\linespread{1.04}
+
+\usepackage[english]{babel}
+
+\usepackage{blindtext}
+
+\sheetconf{
+    lecture   = {Networks and Complex Systems},
+  lecturer  = {F.~Klimm~und~B.F.~Maier},
+  semester  = {Sch\"ulerakademie 5.2 (Ro\ss leben 2016)},
+  author    = {},
+  % teacher,
+  solutions=false,
+}
+
+\setsheetfont{lecture on titlepage}{\sffamily\Huge}
+\setsheetfont{sheet title}{\sffamily\Large}
+\setsheetfont{type on titlepage}{\sffamily\scriptsize\color{maincolor}}
+\setsheetfont{sheet topic}{\sffamily\Huge\color{maincolor}}
+\setsheetfont{sheet lecture}{\it\sffamily\Large\color{maincolor}}
+\setsheetfont{exercise topic}{\sffamily\Large\color{maincolor}}
+\setsheetfont{exercise label}{\sffamily\Large\color{maincolor}}
+\setsheetfont{subexercise topic}{\sffamily\large\color{maincolor}}
+\setsheetfont{subexercise label}{\sffamily\large\color{maincolor}}
+
+\setsheettemplate{sheet title (student)}{Worksheet~\thesheet}
+\setsheettemplate{exercise name}{Exercise}
+\setsheettemplate{subexercise name}{Subexercise}
+
+\lstset{%
+  %linewidth=\textwidth,
+  %linewidth=16cm,
+  language=Python,                  % the language of the code
+  basicstyle=\ttfamily\small,
+  backgroundcolor=\color{maincolor!5},
+  %basicstyle=\footnotesize,      % the size of the fonts that are used for the code
+  numbers=left,                   % where to put the line-numbers
+  stepnumber=1,                   % the step between two line-numbers. If it's 1, each line 
+                                  % will be numbered
+  numberstyle=\scriptsize\color{maincolor!70},
+  numbersep=5pt,                  % how far the line-numbers are from the code
+  frame=single,                   % adds a frame around the code
+  rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks
+  tabsize=4,                      % sets default tabsize to 2 spaces
+  captionpos=b,                   % sets the caption-position to bottom
+  breaklines=true,                % sets automatic line breaking
+  breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+  %keywordstyle=\color{blue},      % keyword style
+  %commentstyle=\color{dkgreen},   % comment style
+  %stringstyle=\color{colorNavy},  % string literal style
+  morekeywords={*,with, where, from, union, all, as},
+  extendedchars=true,
+  literate={ä}{{\"{a}}}1 {ö}{{\"o}}1 {ü}{{\"u}}1,
+}

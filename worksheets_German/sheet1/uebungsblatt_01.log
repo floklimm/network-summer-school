@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.21)  31 OCT 2017 15:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.21)  1 NOV 2017 11:14
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -720,10 +720,10 @@ LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
 (Font)              scaled to size 5.76004pt on input line 125.
  [3] (./uebungsblatt_01.aux) ) 
 Here is how much of TeX's memory you used:
- 6648 strings out of 493089
- 100125 string characters out of 6134841
+ 6647 strings out of 493089
+ 100118 string characters out of 6134841
  264633 words of memory out of 5000000
- 9982 multiletter control sequences out of 15000+600000
+ 9981 multiletter control sequences out of 15000+600000
  49149 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,7n,72p,340b,1251s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -737,7 +737,7 @@ ic/mathdesign/mdbch/md-chri7m.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
 e1/public/txfonts/t1xbtt.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
 blic/txfonts/t1xtt.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/t
 xfonts/t1xtt.pfb>
-Output written on uebungsblatt_01.pdf (3 pages, 65239 bytes).
+Output written on uebungsblatt_01.pdf (3 pages, 64991 bytes).
 PDF statistics:
  47 PDF objects out of 1000 (max. 8388607)
  33 compressed objects within 1 object stream
