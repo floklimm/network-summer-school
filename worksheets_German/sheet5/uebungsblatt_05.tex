@@ -1,0 +1,175 @@
+\input{./../tex_files/praeamble}
+
+\usepackage{pstricks,pst-node,pst-tree}
+
+
+\begin{document}
+
+  \sheet[%
+  number=5,
+  topic={Dynamische Systeme},
+      %deadline=Deadline: \today,
+    ]
+
+\vspace{-1cm}
+\noindent\rule{12cm}{0.4pt}
+
+  \exercise[%
+  topic = Populationsdynamik in diskreter Zeit
+  ]
+
+  In dem Vortrag am Vormittag haben wir die Populationsdynamik von Verhulst
+ diskutiert, deren Abbildungsgleichung lautet
+
+  \begin{equation}
+      x_{n+1} = \lambda x_n(1-x_n)\,.
+  \end{equation}
+
+  \begin{enumerate}
+      \item Wenn $x\in [0,1]$ gelten soll,  wie ist dann die
+          Beschr\"ankung des Wachstumsparameters $\lambda$?
+      \item Was sind die Fixpunkte $x^*$ der Dynamik?
+      \item Wie ist die Stabilit\"at des kleineren der zwei
+          Fixpunkte f\"ur $\lambda<1$? Wie ist sie f\"ur $\lambda>1$?
+          Um das zu \"uberpr\"ufen, setze Werte $x^*+\epsilon$ ein (mit
+          $\epsilon\ll1$). Der Wert $\epsilon$ ist eine so genannte
+          \textit{St\"orung}. Um die Stabilit\"at des Fixpunktes 
+          zu ermitteln, untersuche, wie sich die Abbildung
+          verh\"alt f\"ur eine kleine St\"orung (z.B. $\epsilon=0.01$).
+  \end{enumerate}
+
+    
+  \exercise[%
+  topic = Dynamische Systeme in kontinuierlicher Zeit
+  ]
+
+  Dynamische Systeme in kontinuierlicher Zeit sind bestimmt durch
+  \begin{equation}
+      \dot x = f(x)\,,
+  \end{equation}
+  wobei die Funktion $f$ eine Abbildung $f:X\rightarrow X$ ist. In
+  diesen Systemen sind Fixpunkte $x^*$ gegeben durch
+  \begin{equation}
+      f(x^*) = \dot x|_{x=x^*} = 0\,.
+  \end{equation}
+  \subexercise
+  Betrachte das dynamische System
+  \begin{equation}
+      \dot x = x^2 -1\,.
+  \end{equation}
+  \begin{enumerate}
+      \item Bestimme die Fixpunkte.
+      \item Bestimme die Stabilit\"at der Fixpunkte mit der
+          Vektorfeldmethode.
+  \end{enumerate}
+
+  \subexercise
+  Bestimme die Fixpunkte und die Stabilit\"at der dynamischen Systeme
+  \begin{enumerate}
+      \item $\dot x = - x^3$
+      \item $\dot x = x^3$
+      \item $\dot x =x^2$
+      \item $\dot x = x$
+      \item $\dot x = 0$
+      \item $\dot x = x-x^3$
+  \end{enumerate}
+  
+  \subexercise[topic=Bifurkation]
+  Betrachte das dynamische System
+  \begin{equation}
+      \dot x = x^2 - a\,.
+  \end{equation}
+  mit $a\in I\!\!R$.
+  Bestimme die Fixpunkte und ihre Stabilit\"at. Wieviele
+  Fixpunkte gibt es f\"ur verschiedene Werte von $a$?
+
+  \subexercise[topic=Newton-Reibung]
+  Die Reibungskraft der Luft auf fallende Gegenst\"ande (auf der Erde,
+  mit Fallbeschleunigung $g$) kann beschrieben
+  werden durch  $F(v) = \beta v^2$, wobei $\beta$ eine Reibungskonstante
+  ist und $v$ die Geschwindigkeit der zu betrachtenden Masse $m$. Die
+  Kraft wirkt in positive $z$-Richtung, also dem Fallen entgegen. Die
+  Zeitentwicklung der Geschwindigkeit ist dann gegeben als
+  \begin{equation}
+      m\dot v = -mg+\beta v^2\,.
+  \end{equation}
+  Was ist der Fixpunkt $v^*$? Ist er stabil? Wie ist der Fixpunkt physikalisch zu
+  interpretieren? Warum ist das Ergebnis der Stabilit\"atsanalyse
+  intuitiv?
+
+  Die allgemeine Form dieser Zeitentwicklung von $v$ ist
+  \begin{equation}
+      m\dot v = -mg-\mathrm{sgn}(v)\beta v^2
+  \end{equation}
+  mit der Vorzeichenfunktion
+  \begin{equation}
+      \mathrm{sgn}(x)=\begin{cases}-1 & x<0\\
+          0 & x=0\\
+          +1 & x>0\end{cases}\,.
+  \end{equation}
+  Das hei\ss{}t, die Reibung wirkt der Bewegung immer entgegen.
+  Bestimme nun das Gleichgewicht $v^*$ f\"ur $g=0$. Ist der Fixpunkt
+  stabil? \"Uberlege dir eine physikalische Situation des Systems mit
+  $g=0$. Ergibt die Stabilit\"atsanalyse ein sinnvolles Ergebnis?
+
+
+  \exercise[topic=Lineare Stabilit\"at]
+  \subexercise
+  Betrachte das System
+  \begin{equation}
+      \dot x = \lambda x
+  \end{equation}
+  mit $\lambda\in I\!\!R$. Welches nat\"urliche System ist durch diese Gleichung beschrieben?
+
+  L\"ose die Gleichung 
+  mit der Methode der Trennung der Variablen (verwende dazu deine Aufzeichnungen
+  von der Krankheitsausbreitung). 
+  Hat das System einen Fixpunkt? Falls ja, f\"ur welche Werte von
+  $\lambda$? 
+
+  \subexercise
+  Betrachte eine beliebige, differenzierbare Funktion $f(x)$. Zeige,
+  dass die Funktion an einer beliebigen Stelle $x_0$ linear approximiert werden
+  kann als
+  \begin{equation}
+      f(x) \approx f(x_0) + m(x-x_0)\,.
+  \end{equation}
+  Zeige, dass die Steigung $m$ bestimmt werden kann als $m=f'(x_0)$ mit
+  der ersten Ableitung $f'(x)$.
+
+  \subexercise
+  Zeige ohne grafische Methoden, dass f\"ur das dynamische System 
+  \begin{equation}
+      \dot x = x-x^3
+  \end{equation}
+  die Stellen $x^*_1=-1$ und $x^*_3=1$ linear stabil sind.
+
+  \exercise[topic=Eigenwerte und Eigenvektoren]
+  \subexercise
+  Betrachte die Matrix
+  \begin{equation}
+      \hat A = \begin{pmatrix} 1 & 1 \\ 0 & 2\end{pmatrix}\,.
+  \end{equation}
+  Was sind die Eigenwerte? Wie lauten die Eigenvektoren $\vec w_1$ und
+  $\vec w_2$?
+  
+%  \subexercise
+%  Seien die Koordinaten $(x,y)$ die Beschreibung des zweidimensionalen
+%  Raumes, der durch die Vektoren 
+%  \begin{equation}
+%      \vec e_1 = \begin{pmatrix} 1\\0\end{pmatrix}\qquad
+%      \mathrm{und}\qquad 
+%      \vec e_2 = \begin{pmatrix} 0\\1\end{pmatrix}
+%  \end{equation}
+%  aufgespannt wird. Gegeben sei nun die Matrix 
+%  \begin{equation}
+%      \hat B = \begin{pmatrix} 1 & 2 \\ 2 & 1\end{pmatrix}
+%  \end{equation}
+%  aus der Vorlesung. Zeige, dass in den Koordinaten $(\tilde x,\tilde
+%  y)$, die nat\"urlich f\"ur die Matrix $\hat B$ sind (d.h. in Form der
+%  Eigenvektoren der Matrix ausgedr\"uckt werden k\"onnen), gilt
+%  \begin{document}
+%  \begin{pmatrix} \tilde x\\ \tilde y \end{pmatrix}
+%  = \begin{pmatrix} 1\\  0 \end{pmatrix} + \begin{pmatrix}
+%      \tilde x\\ \tilde y \end{pmatrix}
+\end{document}
