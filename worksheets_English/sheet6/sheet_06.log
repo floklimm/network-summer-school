@@ -1,13 +1,13 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.21)  1 NOV 2017 17:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.21)  1 NOV 2017 19:23
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**uebungsblatt_06.tex
-(./uebungsblatt_06.tex
+**sheet_06.tex
+(./sheet_06.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
-(./../tex_files/praeamble.tex (./exercisesheet.cls
+(./../tex_files/preamble_engl.tex (./exercisesheet.cls
 Document Class: exercisesheet 2012/04/26
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
@@ -860,8 +860,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip49
 )
-(./uebungsblatt_06.aux)
-\openout1 = `uebungsblatt_06.aux'.
+(./sheet_06.aux)
+\openout1 = `sheet_06.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
@@ -936,9 +936,9 @@ LaTeX Info: Redefining \ref on input line 8.
 LaTeX Info: Redefining \pageref on input line 8.
 LaTeX Info: Redefining \nameref on input line 8.
 
-(./uebungsblatt_06.out) (./uebungsblatt_06.out)
+(./sheet_06.out) (./sheet_06.out)
 \@outlinefile=\write3
-\openout3 = `uebungsblatt_06.out'.
+\openout3 = `sheet_06.out'.
 
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
 (Font)              scaled to size 13.82408pt on input line 14.
@@ -955,15 +955,10 @@ Overfull \hbox (2.84674pt too wide) in paragraph at lines 17--18
 [] 
  []
 
-(./lotkavolterra.tex
-Overfull \hbox (0.86578pt too wide) in paragraph at lines 7--8
-\T1/mdbch/m/n/10 sten Ver-fahren ist das so-ge-nan-nte \T1/mdbch/m/it/10 Euler-
-Verfahren\T1/mdbch/m/n/10 , auch in-tu-itiv \T1/mdbch/m/it/10 Meth-ode der klei
-nen
- []
-
+(./lotkavolterra_engl.tex
 LaTeX Font Info:    Try loading font information for OT1+mdbch on input line 10
 .
+
 (/usr/local/texlive/2015/texmf-dist/tex/latex/mathdesign/mdbch/ot1mdbch.fd
 File: ot1mdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OT1/mdbch.
 )
@@ -1040,9 +1035,9 @@ LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
 (Font)              scaled to size 4.80003pt on input line 10.
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 21.
+(Font)              scaled to size 11.52008pt on input line 22.
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 59.
+(Font)              scaled to size 7.68005pt on input line 65.
 
 [1
 Non-PDF special ignored!
@@ -1058,102 +1053,93 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (20.66689pt too wide) in paragraph at lines 69--71
-\T1/mdbch/m/n/10 schiedene An-fangs-be-din-gun-gen und analysiere zu welchen de
-r an-a-lytisch beobachteten
- []
-
 LaTeX Font Info:    Font shape `T1/mdbch/m/it' will be
-(Font)              scaled to size 11.52008pt on input line 84.
-) (./fraktale.tex
-Overfull \hbox (7.41315pt too wide) in paragraph at lines 6--13
-\T1/mdbch/m/n/10 Saskia und Kon-rad haben beide die Koch-Kurve einge-führt, Kon
--rad als Lindenmayer-
- []
-
+(Font)              scaled to size 11.52008pt on input line 99.
+) (./fractals.tex
+LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
+(Font)              scaled to size 9.60007pt on input line 18.
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 38.
+(Font)              scaled to size 6.72005pt on input line 32.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 41.
+(Font)              scaled to size 7.68005pt on input line 34.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 41.
+(Font)              scaled to size 5.76004pt on input line 34.
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 7.68005pt on input line 41.
+(Font)              scaled to size 7.68005pt on input line 34.
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 5.76004pt on input line 41.
+(Font)              scaled to size 5.76004pt on input line 34.
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 41.
+(Font)              scaled to size 7.68005pt on input line 34.
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 41.
+(Font)              scaled to size 5.76004pt on input line 34.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 41.
+(Font)              scaled to size 7.68005pt on input line 34.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 41.
+(Font)              scaled to size 5.76004pt on input line 34.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 41.
+(Font)              scaled to size 7.68005pt on input line 34.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 41.
+(Font)              scaled to size 5.76004pt on input line 34.
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 41.
+(Font)              scaled to size 7.68005pt on input line 34.
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 41.
+(Font)              scaled to size 5.76004pt on input line 34.
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 41.
+(Font)              scaled to size 7.68005pt on input line 34.
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 41.
+(Font)              scaled to size 5.76004pt on input line 34.
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 41.
+(Font)              scaled to size 5.76004pt on input line 34.
 LaTeX Font Info:    Font shape `T1/mdbch/m/it' will be
-(Font)              scaled to size 7.68005pt on input line 41.
-LaTeX Font Info:    Try loading font information for T1+txtt on input line 41.
+(Font)              scaled to size 7.68005pt on input line 34.
+LaTeX Font Info:    Try loading font information for T1+txtt on input line 34.
+
 (/usr/local/texlive/2015/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
-)
+) [2]
+Overfull \hbox (0.93886pt too wide) in paragraph at lines 36--37
+[]\T1/mdbch/m/n/10 Change the com-mands in the first par of the pro-gramme and 
+dis-cuss how it changes
+ []
+
 (./code/turtleexample.py
 LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <9> not available
 (Font)              Font shape `T1/txtt/bx/n' tried instead on input line 1.
- [2]
 LaTeX Font Info:    Font shape `T1/txtt/m/it' in size <9> not available
 (Font)              Font shape `T1/txtt/m/sl' tried instead on input line 4.
 ) [3])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 22.
  [4]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 22.
- (./uebungsblatt_06.aux)
+ (./sheet_06.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 22.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 22.
-
-
-Package rerunfilecheck Warning: File `uebungsblatt_06.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `uebungsblatt_06.out':
-(rerunfilecheck)             Before: 25C8A850528DA325B618FD20835E3090;317
-(rerunfilecheck)             After:  553BBCFD8C75C9D5E0FF70EE600A2316;305.
+Package rerunfilecheck Info: File `sheet_06.out' has not changed.
+(rerunfilecheck)             Checksum: 0903CBAEB3E4967A5BB68768A380BEB5;297.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 22.
  ) 
 Here is how much of TeX's memory you used:
- 17963 strings out of 493089
- 290134 string characters out of 6134841
- 491626 words of memory out of 5000000
- 21022 multiletter control sequences out of 15000+600000
- 56342 words of font info for 100 fonts, out of 8000000 for 9000
+ 17967 strings out of 493089
+ 290109 string characters out of 6134841
+ 490630 words of memory out of 5000000
+ 21023 multiletter control sequences out of 15000+600000
+ 59278 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,9n,72p,571b,1969s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,9n,72p,543b,1257s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}</usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7t.pfb></usr/l
-ocal/texlive/2015/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7y.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chri7
-m.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb>
-Output written on uebungsblatt_06.pdf (4 pages, 72321 bytes).
+cal/texlive/2015/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7t.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7y.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chri7m.p
+fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb>
+Output written on sheet_06.pdf (4 pages, 76730 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
- 164 compressed objects within 2 object streams
+ 186 PDF objects out of 1000 (max. 8388607)
+ 169 compressed objects within 2 object streams
  90 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

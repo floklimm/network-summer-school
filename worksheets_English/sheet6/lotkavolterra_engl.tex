@@ -1,0 +1,101 @@
+% !TEX root = ./sheet_06.tex
+
+ \exercise[%
+ topic = Numerical Solutions of Differential Equations
+  ]
+
+Often it is not possible to solve \emph{Ordniary Differential Equations} (ODE) analytically. In such cases we have to use numerical solvers to find approximate solutions. One of the most simplistic procedure is the so-called \emph{Euler method}, which we outline below
+
+If we have the following ODE
+\begin{align}
+\dot y = f(t,y)\,.
+\end{align}
+with the inital value $y(t_0)=y_0$. Then we can compute the following value $y_{k+1}$ from the current value $(t_k,y_k)$ by using
+\begin{align}
+\dot y_{k+1} =y_k + h\cdot f(t_k,y_k)\,.
+\end{align}
+This is a \emph{linear} approximation and $h$ gives the step size. We find the whole numerical solution by iteratively applying this formula. Usually, smaller step width result in better numerical solutions. 
+
+
+ \subexercise[%
+  topic={Exponential Growth},
+    ]
+
+
+In the beginning we want to analyse a one-dimensional problem which might be familiar, the \emph{exponential growth}.
+		
+Find the analytical solution for the following ODE
+\begin{align}
+\dot x(t) = \lambda x(t)\\
+x(t_0)=x_0
+\label{eqn:exponentielles}
+\end{align}
+
+\subexercise[%
+  topic={One-Dimensional Euler Method},
+    ]
+    
+Solve the ODE of Equation~(\ref{eqn:exponentielles}) numerically with the Euler method. You can choose  $h=1$, $x_0=3$, and $\lambda=1.2$.
+    
+Illustrate the temporal behaviour $x(t)$ and compare it with the analytical solution. How does the system behave if the step size $h$ is chosen too large?
+
+
+Optional: Vary $\lambda \in \{-2,-0.1,0.1,2\}$. Illustrate the different curves $x_{\lambda}(t)$ and describe the behaviour.
+
+
+\subexercise[%
+  topic={Numerical Stability Analysis},
+    ]
+
+
+We want to investigate the stability of the fixed points $x^{*}$. For this firstly use the analytical approach. Now we validate our findings numerically. For this we perturb the ODE a small step $\varepsilon$ from a fixed point and check with the Euler method whether the system returns to the fixed point or moves further away. Analyse the behaviour of all fixed points for $\lambda = \{-1,0,1\}$.
+    
+
+\subexercise[%
+  topic={Optional: Error Estimation for the Euler Method},
+    ]
+
+
+For the simple ODE of Equation~(\ref{eqn:exponentielles}) we know the analytical solution. Therefore, we can calculate the deviation or \emph{numerical error} of the Euler method in dependence of the step size $h$.
+
+To achieve this calculate and illustrate $\mathrm{Error}(h)=|x_{\mathrm{analytic}}(t) - x_{\mathrm{numerical}}(t,h)|$. Chose for example $t=100$ and vary the step size $h$. How does the numerical error $\mathrm{Error}(h)$ depend on the step size $h$?
+
+ \subexercise[%
+  topic={Numerical Solution of the Lotka-Volterra Equations},
+    ]
+
+We can use the Euler method also for high dimensional ODE's. Here, we want to analyse the two-dimensional \emph{Lotka-Volterra equations}, which we discussed already earlier and describe the relationship between animal species.
+
+
+This predator prey system is given by:
+\begin{align}
+\dot x(t) = x(3-x-2y)\\
+\dot y(t) = y(2-x-y)\,.
+\end{align}
+
+The Euler method works similar to the one-dimensional case:
+\begin{align}
+x_{k+1} = x_{k} + \dot x(t)_{k} \\
+y_{k+1} = y_{k} + \dot y(t)_{k}\,.
+\end{align}
+Now use the Euler method to solve the Lotka-Volterra equations numerically. Use different initial conditions and investigate which of the analytically expected fixed points are observed. To achieve this illustrate $x(t)$ and $y(t)$. Are any of the expected fixed points not observed and if so why is this the case?
+
+\subexercise[%
+  topic={Optional: Oscillations in the Lotka-Volterra System},
+    ]
+    
+Another variant of the Lotka-Volterra equations is given by
+\begin{align}
+\dot x(t) = x(\alpha -\beta y)\\
+\dot y(t) = y(\gamma -\delta y)\,.
+\end{align}
+
+
+
+Illustrate different \emph{trajectories} $(x(t),y(t))$ for many choices of the parameters  $\alpha$, $\beta$, $\gamma$ und $\delta$ and initial conditions. For example, try  $\alpha=2/3$, $\beta=4/3$, $\gamma=1$ and $\delta=1$ and $x_0=y_0=0.9$?
+
+\subexercise[%
+  topic={Optional: \emph{Basins of Attraction} of the Lotka-Volterra System},
+    ]
+
+Research the definition of  \emph{Basins of Attraction} and detect them numerically for a certain choice of parameters for the Lotka-Volterra system.
