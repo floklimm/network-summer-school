@@ -1,0 +1,165 @@
+\input{./../tex_files/praeamble}
+
+\usepackage{pstricks,pst-node,pst-tree}
+\usepackage{graphicx}
+
+
+\begin{document}
+
+  \sheet[%
+  number=4,
+      topic={Infektionsdynamiken},
+      %deadline=Deadline: \today,
+    ]
+
+\vspace{-1cm}
+\noindent\rule{12cm}{0.4pt}
+
+  \exercise[%
+  topic = Ein Netzwerk der Klosterschule Rossleben 
+    ]
+
+\label{rossleben}
+
+Ziel dieser Aufgabe ist es ein Netzwerk der Klosterschule Ro\ss{}leben zu erstellen. Dabei werden R\"aume als Knoten dargestellt. Zwei R\"aume sind \"uber eine Kante verbunden wenn es m\"oglich ist \emph{direkt} von einem in den anderen zu gelangen. Am Ende soll dieses Netzwerk als Adjazenzmatrix auf dem Computer sein, so dass sie in Python geladen werden kann.
+
+ \subexercise[%
+  topic=Das Problem aufteilen,
+    ]
+\"uberlegt, wie ihr das Problem im Kurs aufteilen k\"onnt. Am Ende soll es eine Datei geben, die alle R\"aume beinhaltet. Erstellt neben der Adjazenzmatrix auch eine zweite Datei, die den Namen der R\"aume angibt, also zum Beispiel:
+
+\begin{tabular}[h]{c|c|c}
+Knotennummer & Etage & Raumbeschreibung \\ \hline
+1 & 0 & AL B\"uro\\
+2 & 1 & Plenum\\
+\multicolumn{2}{c}{\vdots}
+\end{tabular}
+
+
+
+ \subexercise[%
+  topic= Gradverteilung,
+    ]
+
+Berechne die Gradverteilung $P(k)$ des Netzwerkes. Stelle die Verteilung als ein Histogramm dar.
+
+\exercise[%
+  topic =  Krankheitsausbruch in der Akademie
+    ]
+
+Der 5.3 Kurs experimentiert im Erdgeschoss mit hochansteckenden pathogenen Keimen. Simuliere einen Krankheitsausbruch ausgehend vom Labor. Verwende dazu ein SI-Modell auf dem in Aufgabe \ref{rossleben} erstellten Netzwerk.
+
+\subexercise[%
+  topic= Vollst\"andige Infektion,
+    ]
+
+Simuliere den Infektionsprozess f\"ur verschiedene Infektionsraten $\beta \in [0,1]$. Nach wie vielen Zeitschritten $t_{\mathrm{end}}$ ist jeweils das gesamte Netzwerk infiziert? Erstelle eine Grafik die $t_{\mathrm{end}}(\beta)$ darstellt. Interpretiere das Ergebnis.\\
+Zusatz: Mittle $t_{\mathrm{end}}(\beta)$ \"uber $s=20$ Simulationen. Wie ver\"andert sich die Kurve?
+
+\subexercise[%
+  topic= Gef\"ahrdete Kurse,
+    ]
+
+Der Ausbruch beginnt wieder vom Labor des Kurses $5.3$. Wir wollen ermitteln, welcher andere Kurs am st\"arksten gef\"ahrdet ist. Simuliere den SI-Prozess f\"ur $\beta=0.01$ und ermittle, zu welchem Zeitpunkt die R\"aume der anderen Kurse und die AL infiziert wurden.
+
+Welche Kurse/R\"aume sind am gef\"ahrdetsten? 
+
+\exercise[%
+  topic =  \emph{Betweenness} Zentralit\"at
+    ]
+
+Neben dem Grad $k_i$ eines Knoten $i$ gibt es auch das sogenannte \emph{Betweenness} Zentralit\"atsma\ss  $g_i$. Es gibt an, auf wie vielen k\"urzesten Wegen zwischen allen Paaren von Knoten ein jeweiliger Knoten $i$ liegt. Genauer ist er definiert als
+\begin{align}
+g_i = \sum_{s\neq i\neq t} \frac{\sigma_{st}(i)}{\sigma_{st}}\,,
+\end{align}
+wobei $\sigma_{st}$ die Anzahl der k\"urzesten Pfade zwischen den Knoten $s$ und $t$ ist und $\sigma_{st}(i)$ die Anzahl dieser Pfade, die durch den Knoten $i$ gehen. Beachte, dass man mit dem Befehl \texttt{networkx.all\_shortest\_paths(G,s,t)} alle k\"urzesten Wege zwischen den Knoten $s$ und $t$ finden kann.
+
+\subexercise[%
+  topic= Betweenness Zentralit\"at von bestimmten Graphen,
+    ]
+
+\begin{itemize}
+\item Skizziere einen Pfadgraph und bestimme $g_i\,\forall\ i \in V$.
+\item Berechne $g_i$ f\"ur den Kreisgraph $C_n$.
+\item Welche zwei Graphen auf $n$ Knoten haben $g_i=0\,\forall\ i \in V$? Zeige, dass die beiden Graphen nicht isomorph sind wenn $n>1$.
+\end{itemize}
+
+
+\subexercise[%
+  topic= Betweenness Zentralit\"at des Kompletten Graphen nach L\"oschung einer Kante,
+    ]
+		
+Sei $K_n$ der komplette Graph mit $n$ Knoten und $e=\{u,v\}$ eine Kante. Zeige, dass die Betweenness Zentralit\"at des Graphen $K_n - e$ dann 
+
+\begin{align}
+g_i = \begin{cases} \frac{1}{n-2} &\mbox{wenn } i \in \{u,v\} \\ 
+0 & \mbox{sonst } \end{cases} 
+\end{align} 
+betr\"agt.
+
+\subexercise[%
+  topic= Betweenness Zentralit\"at zweier verbundener n-Cliquen,
+    ]
+
+Der Graph $G$ besteht aus zwei n-Cliquen die \"uber einen einzelnen Knoten verbunden sind. Bestimme die Betweenness $g_i$ dieses Verbindungsknoten.
+
+Verallgemeinere dies f\"ur $c$ n-Cliquen, die \"uber einen zentralen Knoten verbunden sind und finde daher eine Funktion $g_i(c,n)$.
+
+%\subexercise[%
+  %topic= Betweenness Zentralit\"at Programmieren,
+    %]		
+%
+%Schreibe ein Programm welches 
+		
+\exercise[%
+  topic =  Krankheitsausbruch in der Akademie -- Impfung
+    ]
+		
+Wir wollen nun untersuchen wie sich die Krankheitsausbreitung in der Akademie verlangsamt wenn wir bestimmte R\"aume 'impfen', d.h sie aus dem Netzwerk entfernen.
+
+
+
+\subexercise[%
+  topic= Zuf\"allige Impfung,
+    ]
+\label{impfung}
+Zun\"achst impfen wir zuf\"allige R\"aume. Impfe zun\"achst einen zuf\"alligen Raum, und untersuche ob sich die Dauer $t_{\mathrm{end}}$ bis zur kompletten Infektion ver\"andert. Wiederhole dies ein paar mal. Ver\"andert sich die Dauer? Interpretiere das Ergebnis.\\
+
+\subexercise[%
+  topic= Zuf\"allige Nachbarschafts-Impfung,
+    ]
+
+Nun wiederholen wir die zuf\"allige Impfung, allerdings nutzen wir unsere Erkenntnisse vom \emph{Freundschafts-Paradoxon}. Wir impfen nicht eine zuf\"alligen Raum sondern den Nachbarraum eines zuf\"alligen Raumes. Nun wiederhole die Messungen von Aufgabe~\ref{impfung}. Ändert sich das Verhalten merklich? 
+
+\subexercise[%
+  topic= Systematische Untersuchung des Impfverhaltens,
+    ]
+
+Wir wollen das Verhalten des Systems unter Impfungen systematisch untersuchen. Dazu impfen wir nicht einen einzigen Raum sondern iterativ zun\"achst einen, dann einen zweiten, einen dritten, usw. bis $50\,\%$ aller Knoten geimpft sind. F\"ur jeden dieser Impfschritte berechne folgende Gr\"o\ss en unter Variation der Infektionsrate $\beta \in \{0.01,0.1,0.5,1\}$ die Anzahl von Knoten die nach 1000 Schritten Infiziert sind
+
+\begin{itemize}
+\item Die Anzahl $N_{1}$ von Knoten die nach 1 Schritt Infiziert sind
+\item Die Anzahl $N_{10}$ von Knoten die nach 10 Schritten Infiziert sind
+\item Die Anzahl $N_{100}$ von Knoten die nach 100 Schritten Infiziert sind
+\item Die Anzahl $N_{1000}$ von Knoten die nach 1000 Schritten Infiziert sind
+\end{itemize}
+
+Beachte, dass du die Dynamik stoppen kannst wenn alle Knoten infiziert sind. Nutze dazu die Python Befehle {\tt if} und {\tt break}.
+
+Wiederhole diese Messungen unter der Nachbarschafts-Impfung.
+
+Interpretiere deine Ergebnisse, welche Impfstrategie ist effektiver, warum? Unter welchem Bedingungen wird nicht das gesamte Netzwerk infiziert?
+
+
+\subexercise[%
+  topic= Zusatz: Impfung mit \emph{Betweenness} Zentralit\"at,
+    ]
+Wiederhole die obigen Messungen unter der Impfstrategie, so dass du die Knoten mit der h\"ochsten \emph{Betweenness} Zentralit\"at $g_i$ impfst. Wie ver\"andert sich das Ausbreitungsverhalten wenn diese gezielte Impfstrategie verwendet wird?
+
+%		\exercise[%
+%  topic =  Zusatz: Kaskaden-Modell
+%    ]
+
+%Neben dem SI-Modell f\"ur Krankheitsausbreitungen gibt es auch das sogenannte Kaskadenmodel f\"ur die Ausbreitung sozialer Ph\"anomene, zum Beispiel 
+
+\end{document}

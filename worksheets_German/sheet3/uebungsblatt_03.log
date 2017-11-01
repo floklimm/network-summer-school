@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.21)  1 NOV 2017 14:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.21)  1 NOV 2017 14:36
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**uebungsblatt_02.tex
-(./uebungsblatt_02.tex
+**uebungsblatt_03.tex
+(./uebungsblatt_03.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (./../tex_files/praeamble.tex (./exercisesheet.cls
@@ -578,220 +578,56 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/pstricks/pstricks.sty
-Package: pstricks 2013/12/12 v0.60 LaTeX wrapper for `PSTricks' (RN,HV)
+(./uebungsblatt_03.aux)
+\openout1 = `uebungsblatt_03.aux'.
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
-)
-(/usr/local/texlive/2015/texmf-dist/tex/generic/pstricks/pstricks.tex
-(/usr/local/texlive/2015/texmf-dist/tex/generic/xkeyval/pst-xkey.tex
-File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
-)
-(/usr/local/texlive/2015/texmf-dist/tex/generic/pstricks/pst-fp.tex
-`pst-fp' v0.05, 2010/01/17 (hv)
-\pstFP@xs=\count134
-\pstFP@xia=\count135
-\pstFP@xib=\count136
-\pstFP@xfa=\count137
-\pstFP@xfb=\count138
-\pstFP@rega=\count139
-\pstFP@regb=\count140
-\pstFP@regs=\count141
-\pstFP@times=\count142
-)
-(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
-x
-\pgfutil@everybye=\toks30
-\pgfutil@tempdima=\dimen121
-\pgfutil@tempdimb=\dimen122
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
-sts.tex))
-(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
-(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
-(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
-\pgf@x=\dimen123
-\pgf@xa=\dimen124
-\pgf@xb=\dimen125
-\pgf@xc=\dimen126
-\pgf@y=\dimen127
-\pgf@ya=\dimen128
-\pgf@yb=\dimen129
-\pgf@yc=\dimen130
-\c@pgf@counta=\count143
-\c@pgf@countb=\count144
-\c@pgf@countc=\count145
-\c@pgf@countd=\count146
-\pgfutil@tempcnta=\count147
-\pgfutil@tempcntb=\count148
-)
-(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen131
-\pgfmath@count=\count149
-\pgfmath@box=\box30
-\pgfmath@toks=\toks31
-\pgfmath@stack@operand=\toks32
-\pgfmath@stack@operation=\toks33
-)
-(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
-tex
-(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
-.code.tex)
-(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
-nometric.code.tex)
-(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
-m.code.tex)
-(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
-rison.code.tex)
-(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
-code.tex)
-(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
-.code.tex)
-(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
-code.tex)
-(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
-erarithmetics.code.tex)))
-(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count150
-))
-\pgffor@iter=\dimen132
-\pgffor@skip=\dimen133
-\pgffor@stack=\toks34
-\pgffor@toks=\toks35
-)
-\psLoopIndex=\count151
-
-`PSTricks' v2.60  <2014/10/25> (tvz)
-\pst@dima=\dimen134
-\pst@dimb=\dimen135
-\pst@dimc=\dimen136
-\pst@dimd=\dimen137
-\pst@dimg=\dimen138
-\pst@dimh=\dimen139
-\pst@dimm=\dimen140
-\pst@dimn=\dimen141
-\pst@dimo=\dimen142
-\pst@dimp=\dimen143
-\pst@hbox=\box31
-\pst@ibox=\box32
-\pst@boxg=\box33
-\pst@cnta=\count152
-\pst@cntb=\count153
-\pst@cntc=\count154
-\pst@cntd=\count155
-\pst@cntg=\count156
-\pst@cnth=\count157
-\pst@cntm=\count158
-\pst@cntn=\count159
-\pst@cnto=\count160
-\pst@cntp=\count161
-\@zero=\count162
-\pst@toks=\toks36
-(/usr/local/texlive/2015/texmf-dist/tex/generic/pstricks/pstricks.con)
-\psunit=\dimen144
-\psxunit=\dimen145
-\psyunit=\dimen146
-\pst@C@@rType=\count163
-\pslinewidth=\dimen147
-\psk@startLW=\dimen148
-\psk@endLW=\dimen149
-\pst@customdefs=\toks37
-\pslinearc=\dimen150
-\pst@symbolStep=\dimen151
-\pst@symbolWidth=\dimen152
-\pst@symbolLinewidth=\dimen153
-\everypsbox=\toks38
-\psframesep=\dimen154
-\pslabelsep=\dimen155
-\sh@wgridXunit=\dimen156
-\sh@wgridYunit=\dimen157
-\pst@shift=\dimen158
-)
-File: pstricks.tex 2014/10/25 v2.60 `PSTricks' (tvz,hv)
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/pstricks/pst-fp.tex)
-File: pst-fp.tex 2014/10/25 v2.60 `PST-fp' (hv)
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/pst-node/pst-node.sty
-Package: pst-node 2012/09/18 v1.01 LaTeX wrapper for `pst-node' (HV)
-Package: pst-node 2010/04/22 package wrapper for pst-node.tex
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/pst-node/pst-node.tex
- v1.35, 2014/08/04
-\psrow=\count164
-\pscol=\count165
-\psmatrixcnt=\count166
-\psrowsep=\skip47
-\pscolsep=\skip48
-\pst@args=\count167
-\num@pts=\count168
-\pst@argcnt=\count169
-)
-File: pst-node.tex 2014/08/04 1.35 `pst-node' (tvz,hv)
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/pst-tree/pst-tree.sty
-Package: pst-tree 2009/01/25 package wrapper for pst-tree.tex
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/pst-tree/pst-tree.tex
- v1.12, 2011/02/28(tvz,dg,hv)
-\pstree@rootbox=\box34
-\pstree@box=\box35
-\psnodecnt=\count170
-\pstreelevel=\count171
-\pstreecnt=\count172
-\pstree@cnt=\count173
-\pstree@stop=\count174
-)
-File: pst-tree.tex 2011/02/28 1.12 `pst-tree' (tvz,hv)
-) (./uebungsblatt_02.aux)
-\openout1 = `uebungsblatt_02.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 7.
-LaTeX Font Info:    Try loading font information for MDA+cmr on input line 7.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 3.
+LaTeX Font Info:    Try loading font information for MDA+cmr on input line 3.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/mathdesign/mdacmr.fd
 File: mdacmr.fd 
 )
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for MDB/cmr/m/n on input line 7.
-LaTeX Font Info:    Try loading font information for MDB+cmr on input line 7.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for MDB/cmr/m/n on input line 3.
+LaTeX Font Info:    Try loading font information for MDB+cmr on input line 3.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/mathdesign/mdbcmr.fd
 File: mdbcmr.fd 
 )
-LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    ... okay on input line 3.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count175
-\scratchdimen=\dimen159
-\scratchbox=\box36
-\nofMPsegments=\count176
-\nofMParguments=\count177
-\everyMPshowfont=\toks39
-\MPscratchCnt=\count178
-\MPscratchDim=\dimen160
-\MPnumerator=\count179
-\makeMPintoPDFobject=\count180
-\everyMPtoPDFconversion=\toks40
+\scratchcounter=\count134
+\scratchdimen=\dimen121
+\scratchbox=\box30
+\nofMPsegments=\count135
+\nofMParguments=\count136
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count137
+\MPscratchDim=\dimen122
+\MPnumerator=\count138
+\makeMPintoPDFobject=\count139
+\everyMPtoPDFconversion=\toks31
 ) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -829,245 +665,195 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count181
+\c@lstlisting=\count140
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 13.82408pt on input line 13.
+(Font)              scaled to size 13.82408pt on input line 9.
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 23.88496pt on input line 13.
+(Font)              scaled to size 23.88496pt on input line 9.
 LaTeX Font Info:    Font shape `T1/mdbch/m/it' will be
-(Font)              scaled to size 9.60007pt on input line 13.
+(Font)              scaled to size 9.60007pt on input line 9.
 LaTeX Font Info:    Font shape `T1/mdbch/m/it' will be
-(Font)              scaled to size 13.82408pt on input line 13.
+(Font)              scaled to size 13.82408pt on input line 9.
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 13.
+(Font)              scaled to size 8.64006pt on input line 9.
 
-Overfull \hbox (2.84674pt too wide) in paragraph at lines 16--17
+Overfull \hbox (2.84674pt too wide) in paragraph at lines 13--14
 [] 
  []
 
-LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 28.
-Package epstopdf Info: Source file: <graph_colouring.eps>
-(epstopdf)                    date: 2016-07-17 22:44:06
-(epstopdf)                    size: 1005299 bytes
-(epstopdf)             Output file: <graph_colouring-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-11-01 11:31:17
-(epstopdf)                    size: 32441 bytes
-(epstopdf)             Command: <epstopdf --outfile=graph_colouring-eps-convert
-ed-to.pdf graph_colouring.eps>
-(epstopdf)             \includegraphics on input line 33.
-Package epstopdf Info: Output file is already uptodate.
-<graph_colouring-eps-converted-to.pdf, id=1, 466.74374pt x 346.29375pt>
-File: graph_colouring-eps-converted-to.pdf Graphic file (type pdf)
-
-<use graph_colouring-eps-converted-to.pdf>
-Package pdftex.def Info: graph_colouring-eps-converted-to.pdf used on input lin
-e 33.
-(pdftex.def)             Requested size: 135.43245pt x 100.48073pt.
-Package epstopdf Info: Source file: <graph_colouring.eps>
-(epstopdf)                    date: 2016-07-17 22:44:06
-(epstopdf)                    size: 1005299 bytes
-(epstopdf)             Output file: <graph_colouring-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-11-01 11:31:17
-(epstopdf)                    size: 32441 bytes
-(epstopdf)             Command: <epstopdf --outfile=graph_colouring-eps-convert
-ed-to.pdf graph_colouring.eps>
-(epstopdf)             \includegraphics on input line 34.
-Package epstopdf Info: Output file is already uptodate.
-File: graph_colouring-eps-converted-to.pdf Graphic file (type pdf)
-
-<use graph_colouring-eps-converted-to.pdf>
-Package pdftex.def Info: graph_colouring-eps-converted-to.pdf used on input lin
-e 34.
-(pdftex.def)             Requested size: 135.43245pt x 100.48073pt.
-LaTeX Font Info:    Try loading font information for OT1+mdbch on input line 45
+LaTeX Font Info:    Try loading font information for OT1+mdbch on input line 21
 .
-
 (/usr/local/texlive/2015/texmf-dist/tex/latex/mathdesign/mdbch/ot1mdbch.fd
 File: ot1mdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OT1/mdbch.
 )
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 45.
+(Font)              scaled to size 9.60007pt on input line 21.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 45.
+(Font)              scaled to size 6.72005pt on input line 21.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 45.
-LaTeX Font Info:    Try loading font information for OML+mdbch on input line 45
+(Font)              scaled to size 4.80003pt on input line 21.
+LaTeX Font Info:    Try loading font information for OML+mdbch on input line 21
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/mathdesign/mdbch/omlmdbch.fd
 File: omlmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OML/mdbch.
 )
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 9.60007pt on input line 45.
+(Font)              scaled to size 9.60007pt on input line 21.
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 6.72005pt on input line 45.
+(Font)              scaled to size 6.72005pt on input line 21.
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 4.80003pt on input line 45.
-LaTeX Font Info:    Try loading font information for OMS+mdbch on input line 45
+(Font)              scaled to size 4.80003pt on input line 21.
+LaTeX Font Info:    Try loading font information for OMS+mdbch on input line 21
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/mathdesign/mdbch/omsmdbch.fd
 File: omsmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OMS/mdbch.
 )
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 45.
+(Font)              scaled to size 9.60007pt on input line 21.
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 45.
+(Font)              scaled to size 6.72005pt on input line 21.
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 45.
-LaTeX Font Info:    Try loading font information for OMX+mdbch on input line 45
+(Font)              scaled to size 4.80003pt on input line 21.
+LaTeX Font Info:    Try loading font information for OMX+mdbch on input line 21
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/mathdesign/mdbch/omxmdbch.fd
 File: omxmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OMX/mdbch.
 )
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 45.
+(Font)              scaled to size 9.60007pt on input line 21.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 45.
+(Font)              scaled to size 6.72005pt on input line 21.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 45.
+(Font)              scaled to size 4.80003pt on input line 21.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 45.
+(Font)              scaled to size 9.60007pt on input line 21.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 45.
+(Font)              scaled to size 6.72005pt on input line 21.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 45.
-LaTeX Font Info:    Try loading font information for MDA+mdbch on input line 45
+(Font)              scaled to size 4.80003pt on input line 21.
+LaTeX Font Info:    Try loading font information for MDA+mdbch on input line 21
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/mathdesign/mdbch/mdamdbch.fd
 File: mdamdbch.fd 2013/08/29 Fontinst v1.933 font definitions for MDA/mdbch.
 )
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 45.
+(Font)              scaled to size 9.60007pt on input line 21.
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 45.
+(Font)              scaled to size 6.72005pt on input line 21.
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 45.
-LaTeX Font Info:    Try loading font information for MDB+mdbch on input line 45
+(Font)              scaled to size 4.80003pt on input line 21.
+LaTeX Font Info:    Try loading font information for MDB+mdbch on input line 21
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/mathdesign/mdbch/mdbmdbch.fd
 File: mdbmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for MDB/mdbch.
 )
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 45.
+(Font)              scaled to size 9.60007pt on input line 21.
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 45.
+(Font)              scaled to size 6.72005pt on input line 21.
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 45.
-
-
-LaTeX Warning: File `petersen_graph.eps' not found on input line 78.
-
-Package epstopdf Info: Source file: <petersen_graph.eps>
-(epstopdf)             Output file: <petersen_graph-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-07-18 15:24:22
-(epstopdf)                    size: 9954 bytes
-(epstopdf)             Command: <epstopdf --outfile=petersen_graph-eps-converte
-d-to.pdf petersen_graph.eps>
-(epstopdf)             \includegraphics on input line 78.
-Package epstopdf Info: Output file is already uptodate.
-<petersen_graph-eps-converted-to.pdf, id=2, 6053.61626pt x 6053.61626pt>
-File: petersen_graph-eps-converted-to.pdf Graphic file (type pdf)
-
-<use petersen_graph-eps-converted-to.pdf>
-Package pdftex.def Info: petersen_graph-eps-converted-to.pdf used on input line
- 78.
-(pdftex.def)             Requested size: 135.43245pt x 135.41533pt.
+(Font)              scaled to size 4.80003pt on input line 21.
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 82.
- [1
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
+(Font)              scaled to size 11.52008pt on input line 36.
+LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
+(Font)              scaled to size 7.68005pt on input line 95.
+
+[1
 
 
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 119--125
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./graph
-_colouring-eps-converted-to.pdf>]
-LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 9.60007pt on input line 87.
-Package epstopdf Info: Source file: <isomorphismus.eps>
-(epstopdf)                    date: 2016-07-18 12:32:46
-(epstopdf)                    size: 29553918 bytes
-(epstopdf)             Output file: <isomorphismus-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-11-01 11:31:34
-(epstopdf)                    size: 714979 bytes
-(epstopdf)             Command: <epstopdf --outfile=isomorphismus-eps-converted
--to.pdf isomorphismus.eps>
-(epstopdf)             \includegraphics on input line 109.
-Package epstopdf Info: Output file is already uptodate.
-
-<isomorphismus-eps-converted-to.pdf, id=14, 3061.4375pt x 1592.95125pt>
-File: isomorphismus-eps-converted-to.pdf Graphic file (type pdf)
-
-<use isomorphismus-eps-converted-to.pdf>
-Package pdftex.def Info: isomorphismus-eps-converted-to.pdf used on input line 
-109.
-(pdftex.def)             Requested size: 304.72562pt x 158.55095pt.
- [2 <./petersen_graph-eps-converted-to.pdf> <./isomorphismus-eps-converted-to.p
-df>]
-Package epstopdf Info: Source file: <graph_colouring.eps>
-(epstopdf)                    date: 2016-07-17 22:44:06
-(epstopdf)                    size: 1005299 bytes
-(epstopdf)             Output file: <graph_colouring-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-11-01 11:31:17
-(epstopdf)                    size: 32441 bytes
-(epstopdf)             Command: <epstopdf --outfile=graph_colouring-eps-convert
-ed-to.pdf graph_colouring.eps>
-(epstopdf)             \includegraphics on input line 132.
-Package epstopdf Info: Output file is already uptodate.
-File: graph_colouring-eps-converted-to.pdf Graphic file (type pdf)
-
-<use graph_colouring-eps-converted-to.pdf>
-Package pdftex.def Info: graph_colouring-eps-converted-to.pdf used on input lin
-e 132.
-(pdftex.def)             Requested size: 135.43245pt x 100.48073pt.
-
-Overfull \hbox (6.30524pt too wide) in paragraph at lines 154--157
-\T1/mdbch/m/n/10 Wir wollen den gieri-gen Färbung-Algorithmus pro-gram-mieren u
-nd auf ver-schiedene
  []
 
-LaTeX Font Info:    Try loading font information for T1+txtt on input line 176.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/txfonts/t1txtt.fd
-File: t1txtt.fd 2000/12/15 v3.1
-) [3
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
-] [4]
-(./uebungsblatt_02.aux) ) 
+ []
+
+<resistornetwork.png, id=12, 315.1775pt x 232.87pt>
+File: resistornetwork.png Graphic file (type png)
+ <use resistornetwork.png>
+Package pdftex.def Info: resistornetwork.png used on input line 164.
+(pdftex.def)             Requested size: 169.29315pt x 125.08345pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
+(Font)              scaled to size 11.52008pt on input line 174.
+LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
+(Font)              scaled to size 7.68005pt on input line 174.
+LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
+(Font)              scaled to size 5.76004pt on input line 174.
+LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
+(Font)              scaled to size 11.52008pt on input line 174.
+LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
+(Font)              scaled to size 7.68005pt on input line 174.
+LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
+(Font)              scaled to size 5.76004pt on input line 174.
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 11.52008pt on input line 174.
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 7.68005pt on input line 174.
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 5.76004pt on input line 174.
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 11.52008pt on input line 174.
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 7.68005pt on input line 174.
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 5.76004pt on input line 174.
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 11.52008pt on input line 174.
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 7.68005pt on input line 174.
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 5.76004pt on input line 174.
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 11.52008pt on input line 174.
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 7.68005pt on input line 174.
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 5.76004pt on input line 174.
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 11.52008pt on input line 174.
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 7.68005pt on input line 174.
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 5.76004pt on input line 174.
+
+Overfull \hbox (2.86832pt too wide) in paragraph at lines 181--184
+[]\T1/mdbch/m/n/10 Untersuche die Beziehung des ef-fek-tiven Wider-standes zwis
+-chen be-liebi-gen Knoten
+ []
+
+[2] [3 <./resistornetwork.png>] (./uebungsblatt_03.aux) ) 
 Here is how much of TeX's memory you used:
- 13974 strings out of 493089
- 232069 string characters out of 6134841
- 305688 words of memory out of 5000000
- 17160 multiletter control sequences out of 15000+600000
- 42059 words of font info for 76 fonts, out of 8000000 for 9000
+ 7275 strings out of 493089
+ 111169 string characters out of 6134841
+ 200071 words of memory out of 5000000
+ 10561 multiletter control sequences out of 15000+600000
+ 47610 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,8n,72p,615b,284s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/ly
-1/texnansi.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/bitstrea/charter
-/bchb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/bitstrea/charter/bc
-hr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/bitstrea/charter/bchri
-8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/mathdesign/mdbch/
-md-chr7m.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/mathdesign/
-mdbch/md-chr7t.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/mathd
-esign/mdbch/md-chr7y.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public
-/mathdesign/mdbch/md-chri7m.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
-/public/txfonts/t1xtt.pfb>
-Output written on uebungsblatt_02.pdf (4 pages, 808321 bytes).
+ 42i,9n,72p,340b,284s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/20
+15/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}</usr/local/texlive/2015/texmf-d
+ist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/local/texlive/2015/texmf-dist/f
+onts/type1/public/mathdesign/mdbch/md-chr7t.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/public/mathdesign/mdbch/md-chr7v.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7y.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chri7m.pfb>
+Output written on uebungsblatt_03.pdf (3 pages, 72733 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
+ 42 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
