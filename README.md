@@ -8,7 +8,11 @@ The worksheets are given in the original German version and a translated English
 
 The topics of the sheets are
 
-| Worksheet  | Topic|
-| ------------- | ------------- |
-| 1 | Introduction into Network Theory  |
-| 2 | Graph Colouring |
+| Worksheet  | Topic| Details |
+| ------------- | ------------- | ----- |
+| 1 | Introduction into Network Theory  | Creating graphs with Python and analysing them |
+| 2 | Graph Colouring | Node and edge colouring, coding greedy colouring algorithm|
+| 3 | Matrix Calculations and Effective Resistance | |
+| 4 | Contagion Dynamics | |
+| 5 | Dynamical Systems | |
+| 6 | Lotka-Volterra Equations and Fractals| |

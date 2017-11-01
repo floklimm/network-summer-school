@@ -8,7 +8,7 @@
 
   \sheet[%
   number=2,
-      topic={F\"arbung von Graphen},
+      topic={Graph },
       %deadline=Deadline: \today,
     ]
 
@@ -16,7 +16,7 @@
 \noindent\rule{12cm}{0.4pt}
 
   \exercise[%
-  topic = Knotenf\"arbung 
+  topic = Node colouring 
     ]
 
 %\lstinputlisting{./code/pfadgraph.py}
@@ -24,10 +24,10 @@
 
 
  \subexercise[%
-  topic=Einen Graphen f\"arben,
+  topic=Colouring a Graph,
     ]
 
-Finde zwei g\"ultige Knotenf\"arbungen f\"ur den abgebildeten Graphen.
+Find two node colourings for the shown graph.
 
 \begin{figure}[h]
 \includegraphics[width=0.4\textwidth]{graph_colouring.eps}
@@ -35,98 +35,109 @@ Finde zwei g\"ultige Knotenf\"arbungen f\"ur den abgebildeten Graphen.
 \end{figure}
 %\clearpage
 
-Wie viele Farben verwenden diese F\"arbungen?
+How many colours are used for each colouring?
 
-Finde eine F\"arbung, die eine Farbe mehr verwendet als deine erste F\"arbung.
+Find a colouring that needs more colours than your first colouring.
 
-Was ist die maximal m\"ogliche Anzahl von Farben, die eine F\"arbung verwenden kann?
+What is the maximal number of colours that any colouring can use?
 
-Finde die minimal m\"ogliche Anzahl von Farben, die eine g\"ultige F\"arbung
-ergibt (also die chromatische Zahl $\chi$).
+Find the minimal number of colours that a colouring uses. This is also known as \emph{chromatic number} $\chi$.
 
 \subexercise[%
-  topic=Chromatische Zahl bestimmter Graphen,
+  topic=Chromatic Number of Graph Models,
     ]
 		\label{subseq:graphen}
-Finde die chromatische Zahl $\chi$ der folgenden Graphen in Abh\"anigkeit von der Anzahl $n$ der Knoten:
+		
+Find the chromatic number $\chi$ of the following graphs in depency of the number $n$ of nodes:
+
 \begin{enumerate}
-\item Nullgraph $N_n$
-\item Pfadgraph $P_n$
-\item Kreisgraph $C_n$
-\item Kompletter Graph $K_n$
-\item Kompletter bipartiter Graph $K_{n,n}$
+\item null graph $N_n$
+\item path graph $P_n$
+\item cycle graph $C_n$
+\item complete graph $K_n$
+\item complete bipartite graph $K_{n/2,n/2}$
 \end{enumerate}
 
 \subexercise[%
-  topic=Chromatische Zahl,
+  topic=Chromatic Number,
     ]
-Gib zwei nichtisomorphe Beispielgraphen mit 5 Knoten und der chromatischen Zahl 3 an.
+ 
+ Find two nonisomorph graphs with $n=5$ nodes and the chromatic number $\chi=3$.   
+ 
 
 \subexercise[%
-  topic=Zoodirektor,
+  topic=Zoo director,
     ]
-    Ein Zoodirektor m\"ochte die folgenden $5$ Tiere in m\"oglichst wenigen Gehege unterbringen: Adler, Schlange, Maus, L\"owe und Ziege. Finde die minimal n\"otige Anzahl von Gehegen um diese Tiere unterzubringen wenn die folgenden Tiere nicht im selben Gehege sein d\"urfen: Adler \& Schlange, Schlange \& Maus, L\"owe \& Ziege.
-
+  
+  A zoo director wants to host the following five animals in as few cages as possible: Eagle, snake, mouse, lion, and goat. Find the necessary number of cages of the following animals are not allowed in the same cage: eagle \& snake, snake \& mouse, lion \& goat. 
+  
 
 \subexercise[%
   topic=Petersen Graph,
     ]
-    In Abbildung \ref{petersen} siehst du den sogenannten Petersen Graph. Finde dessen chromatische Zahl $\chi$. Skizziere ihn mit einer $\chi$-F\"arbung.
-
+    
+In Figure~\ref{petersen} you can see the so called \emph{Petersen graph}. Find its chromatic number $\chi$. Sketch a  $\chi$-colouring on it.    
+    
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.4\textwidth]{petersen_graph.eps}
-    \caption{\label{petersen} Petersen Graph.}
+    \caption{\label{petersen} The Petersen graph.}
 
 %\includegraphics[width=0.4\textwidth]{graph_colouring.eps}
 \end{figure}
 
-\subexercise[%
-  topic=Eine Obergrenze f\"ur die chromatische Zahl,
-    ]
-Sei $G$ ein Graph aus $n$ Knoten und {\bf nicht} der komplette Graph $K_n$. Zeige, dass $\chi (G) < n$.
-\emph{Hinweis: Es kann n\"utzlich sein zuerst folgendes Lemma zu beweisen: Sei $c(V)$ eine zul\"assige F\"arbung des Graphen $G=(V,E)$. Dann ist $c(V)$ auch eine zul\"assige F\"arbung des Graphen $G'=(V,E')$, wobei $E'\subset E$.}
 
 
 \subexercise[%
-  topic=Graphen gleicher Gr\"o\ss e mit unterschiedlichem Chromatischer Zahl,
+  topic=Graphs of Different Size but Same Chromatic Number
     ]
 		
-		Finde Graphen $G$ und $H$ so dass die Zahl $n$ an Knoten und $m$ der Kanten gleich sind aber $\chi (G)> \chi (H)$.
+	Find two graphs $G$ and $H$ such that they have the same number $n$ of nodes and $m$ of edges but $\chi (G)> \chi (H)$.
+
+
+
+\subexercise[%
+  topic=An upper bound for the chromatic number,
+    ]
+    
+Be $G$ a graph with $n$ nodes and {\bf not} the complete graph $K_n$. Show that $\chi (G) < n$. \emph{Hint: It might be useful to first prove the following lemma: Shall $c(V)$ a proper colouring of the graph $G=(V,E)$. Then $c(V)$ is also a proper colouring of the graph $G'=(V,E')$ with $E'\subset E$ }
+    
 
 
 \exercise[%
-  topic = Graphisomorphismus 
+  topic = Graph isomorphism 
     ]
 		
 		\subexercise[%
-  topic=Isomorphie von Graphen untersuchen,
+  topic=Check the isomorphism between graphs,
     ]
 		
-		Welche dieser Graphen sind isomorph? F\"ur jene die isomorph sind konstruiere einen Isomorphismus. F\"ur jene die es nicht sind, finde eine graphentheoretische Gr\"o\ss e die sich bei beiden Graphen unterscheidet.
-		\begin{figure}[h]
+		
+Which of the graphs shown below are isomorph? For those of them that are isomorph find the isomorphism function. For the other find a graph theoretical metric that distinguishes them such that they can not be isomorph.		
+		
+\begin{figure}[h]
     \centering
     \includegraphics[width=0.9\textwidth]{isomorphismus.eps}
     \caption{\label{isomorphismus} Welche dieser Graphen sind isomorph?}
-
-%\includegraphics[width=0.4\textwidth]{graph_colouring.eps}
 \end{figure}
 
 \subexercise[%
-  topic=2-regul\"are Graphen,
+  topic=2-regular Graphs,
     ]
-Die Menge aller 2-regul\"aren Graphen kann auch als \emph{Vereinigung von Kreisgraphen} beschrieben werden. Finde verschiedene 2-regul\"are Graphen mit $n=10$. 
-Beweise, dass diese Graphen nicht isomorph sind.
+
+The set of all 2-regular graphs can also be called the \emph{disjoint union of all cycle graphs}. Find different 2-regular graphs with $n=10$ nodes. Prove that the graphs are not isomorph.
+    
+    
 \clearpage 
 \exercise[%
-  topic = Kantenf\"arbung 
+  topic =Edge Colouring 
     ]
 
 \subexercise[%
-  topic=Kantenf\"arbung eines Graphen,
+  topic=Edge Colouring of a Graph,
     ]
 
-Finde eine g\"ultige Kantenf\"arbung f\"ur den abgebildeten Graphen welche $\Delta$ Farben verwendet, wobei $\Delta$ sein maximaler Grad ist. Wie ist der chromatische Index dieses Graphen?
+Find a proper edge colouring for the graph shown below. The colouring should use exactly $\Delta$ colour, where $\Delta$ is the graphs maximal degree. What is the chromatic index $\chi'$ of the graph?
 
 \begin{figure}[h]
 \includegraphics[width=0.4\textwidth]{graph_colouring.eps}
@@ -134,60 +145,71 @@ Finde eine g\"ultige Kantenf\"arbung f\"ur den abgebildeten Graphen welche $\Del
 \end{figure}
 
 \subexercise[%
-  topic=Kantenf\"arbung bestimmter Graphen,
+  topic=Edge colouring of Graph Models,
     ]
-Bestimme den chromatischen Index $\chi'$ der folgenden Graphen in Abh\"anigkeit von der Anzahl $n$ der Knoten:
+
+Find the  chromatic index  $\chi'$ in dependence of the number $n$ of nodes of the following graphs:   
 
 \begin{enumerate}
-\item Pfadgraph $P_n$
-\item Kreisgraph $C_n$
-\item Kompletter Graph $K_n$ (schwierig, eventuell auslassen)
+\item path graph $P_n$
+\item cycle graph $C_n$
+\item complete graph $K_n$ (tricky, potentially skip)
 \end{enumerate}
 
-Vergleiche f\"ur diese Graphen den chromatischen Index $\chi$ mit dem maximalen Grad $\Delta$.
-
+Compare for these graphs the chromatic index  $\chi'$  with the maximal degree $\Delta$.
 
 \exercise[%
-  topic = Gierige F\"arbung Programmieren
+  topic = Coding the Greedy Colouring
     ]
 
-Wir wollen den gierigen F\"arbung-Algorithmus programmieren und auf verschiedene Netzwerke anwenden.
+We want to programme the \emph{greedy node colouring algorithm} and use it on different networks.
+
 \subexercise[%
-  topic=Gierige F\"arbung,
+  topic=Greedy Colouring,
     ]
-		Erstelle eine Funktion die als Input eine Adjazenzmatrix und eine Reihenfolge aller Knoten hat und die Knoten des Graphen \emph{gierig} f\"arbt.
+    
+    
+    Create a function that takes as input the adjacency matrix $A$ of a graph and an ordering of the nodes and returns a proper colouring of the graph by using the greedy colouirng algorithm. 
+    
+
 \subexercise[%
-  topic=Gierige F\"arbung von bestimmten Graphen,
+  topic=Greedy Coloruing of Graph Models,
     ]
-Wende den gierigen Algorithmus auf die Graphen von Teilaufgabe \ref{subseq:graphen} an wenn $n=10$. Verwende verschiedene zuf\"allige Reihenfolgen der Knoten. Vergleiche deine analytischen Ergebnisse f\"ur die chromatische Zahl mit der Anzahl von verwendeten Farben der gierigen F\"arbung.
+    
+Use the greedy colouring algorithm on the graphs from Subexercise~\ref{subseq:graphen} with a chosen size of $n=10$. Use different random orderings of the nodes. Compare the results for different realisations amongst each other and with the analytical formulas you derived for the chromatic number $\chi$.
+    
+   
 		
 		
 		\subexercise[%
-  topic=Zeitkomplexit\"at des gierigen F\"arbe-Algorithmus,
+  topic=Time Complexity of the Greedy Colouring Algorithm,
     ]
 
-Wir wollen den gierigen Algorithmus auf zuf\"allige Graphen der Gr\"o\ss e $n$ anwenden. Um sicher die chromatische Zahl eines jeden Graphen zu bestimmen m\"ussen wir alle m\"oglichen Knotenreihenfolgen verwenden.\\
-Wieviel Knotenreihenfolgen gibt es in Abh\"anigkeit von $n$? \"uberpr\"ufe die Zeitkomplexit\"at des gierigen Algorithmus numerisch.
-		
-\exercise[%
-  topic=K\"afighaltung von Tieren,
-    ]
+We want to use the greedy colouring algorithm on random graphs of size $n$. To find the chromatic number of a graph with certainty we have to check all possible node orderings. 
 
-Lade das Netzwerk mit dem Namen {\tt everglades\textunderscore adjazenz.txt}. Es handelt sich um eine Nahrungskette von Tieren im Everglades Nationalpark in Florida. Die Tiere sind verbunden wenn sie in einer R\"auber-Beute Beziehung stehen. Ein Zoo m\"ochte diese $63$ Tiere halten. Es sollen so wenig wie m\"oglich K\"afige verwendet werden wobei Tiere nicht im selber K\"afig sein d\"urfen wenn eines des andere potentiell isst. In der Datei {\tt everglades\textunderscore namen.txt} sind die Namen der Tiere angegeben.
+How many node orderings exist in dependency of the number $n$ of nodes? 
 
+Using this insights compute numerically the time complexity of the greedy algorithm to find the chromatic number $\chi$ of a graph with size $n$.
 
-Formuliere das Problem graphentheoretisch und l\"ose es numerisch. Wende dazu den gierigen F\"arbe-Algorithmus auf zuf\"allige Reihenfolgen der Knoten an. 
 
 \exercise[%
-  topic=Chromatisches Polynom,
+  topic=Placing Animals in Cages ,
     ]
 
-Recherchiere das Chromatische Polynom und was ein Baum ist. Beweise, dass das chromatische Polynom des Nullgraphen $\chi_{N_n}(t) =t$, des kompletten Graphen $\chi_{K_n}(t) =t^n$ und eines Baums 
 
+
+Load the network from the file  {\tt everglades\textunderscore adjazenz.txt}. It represents the food chain of animals in the Everglades national park in Florida. The animals are connected if they are in a predator--prey relationship. A zoo wants to place all $63$ animals in as few cages as possible. To avoid them killing each other no pair of animals is allowed to be kept in the cage if the one potentially eats the other. The file  {\tt everglades\textunderscore namen.txt} gives the names of the animals.
+
+Formulate the problem as a graph theoretical one and solve it numerically. For this use the greedy colouring algorithm on random orders of the nodes. Is it possible to check all orderings? Illustrate the graph and show the cage assignment that uses the least number of cages.
+
+\exercise[%
+  topic=Chromatic Polynom,
+    ]
+
+Research the definition of the \emph{chromatic polynom}, as well as, the definition of a \emph{tree} graph. Then prove that the chromatic polynom of the empty graph is $\chi_{N_n}(t) =t$, the one of the complete graph is $\chi_{K_n}(t) =t^n$, and of a tree is given by
 \begin{align}
-\chi_{G(t)} = t(t-1)^{n-1}
+\chi_{G(t)} = t(t-1)^{n-1}\,.
 \end{align}
-betr\"agt.
 
  
 
