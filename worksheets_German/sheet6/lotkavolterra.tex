@@ -1,0 +1,80 @@
+
+ \exercise[%
+ topic = Numerisches Lösen von Differentialgleichungen
+  ]
+
+
+Oft ist es nicht möglich Differentialgleichungen (DGL) analytisch zu lösen. Dann müssen wir auf numerische Lösungsverfahren zurückgreifen. Eines der einfachsten Verfahren ist das sogenannte \emph{Euler-Verfahren}, auch intuitiv \emph{Methode der kleinen Schritte} genannt.\\
+Sei folgende Differentialgleichung gegeben 
+\begin{align}
+\dot y = f(t,y)\,.
+\end{align}
+mit dem Anfangswert $y(t_0)=y_0$. Dann berechnen wir iterativ aus dem derzeitigen Zustand $(t_k,y_k)$ den jeweils folgenden Wert $y_{k+1}$ als
+\begin{align}
+\dot y_{k+1} =y_k + h\cdot f(t_k,y_k)\,.
+\end{align}
+Dabei handelt es sich um eine \emph{lineare} Approximation und $h$ gibt die Schrittweite an. In der Regel resultieren kleiner Schrittweiten in besseren numerischen Lösungen.\\
+
+ \subexercise[%
+  topic={Exponentielles Wachstum},
+    ]
+		
+Zunächst wollen wir uns mit einem eindimensionalen Problem beschaffen und zwar mit dem exponentiellen Wachstum.\\
+Wie lautet die analytische Lösung der folgenden DGL?
+\begin{align}
+\dot x(t) = \lambda x(t)\\
+x(t_0)=x_0
+\label{eqn:exponentielles}
+\end{align}
+
+\subexercise[%
+  topic={Eindimensionales Euler-Verfahren},
+    ]
+Löse die obige DGL numerisch mit dem Euler-Verfahren. Setze zunächst $h=1$, $x_0=3$ und $\lambda=1.2$.\\
+Stelle nun den zeitlichen Verlauf grafisch dar und vergleiche mit der analytischen Lösung. Wie verhält sich das System wenn die Schrittweite stark erhöht wird?\\
+Zusatz: Variiere $\lambda \in \{-2,-0.1,0.1,2\}$. Stelle die verschiedenen Kurven $x(t)$ dar, wie verhalten sie sich? 
+
+\subexercise[%
+  topic={Numerisches Überprüfen der Stabilität von Fixpunkten},
+    ]
+Bestimme für die obige DGL alle Fixpunkte $x^{*}$ analytisch. Nun wollen wir die Stabilität überprüfen. Dazu lenken wir die DGL ein wenig von dem Fixpunkt aus und überprüfen numerisch ob sich das System wieder zurück zum Fixpunkt bewegt oder sich davon entfernt.\\
+Überprüfe dies für $\lambda = \{-1,0,1\}$.
+
+\subexercise[%
+  topic={Zusatz: Fehlerabschätzung des Euler Verfahren},
+    ]
+
+Da wir die analytische Lösung $x_{\mathrm{ana}}$ der obigen DGL kennen können wir überprüfen wie sich die Abweichung (oder auch der Fehler) in Abhängigkeit von der Schrittweite $h$ verhält.\\
+Stelle hierfür $\mathrm{Fehler}(h)=|x_{\mathrm{ana}}(t) - x_{\mathrm{numerisch}}(t,h)|$ dar. Wähle zum Beispiel $t=100$ und variiere die Schrittweite $h$. Wie sieht der Zusammenhang $\mathrm{Fehler}(h)$ aus?
+
+ \subexercise[%
+  topic={Numerische Lösung der Lotka-Volterra Gleichungen},
+    ]
+
+Wir können das Euler-Verfahren auch auf zweidimensionale DGLs anwenden. Hierzu wählen wir als Beispiel die \emph{Lotka-Volterra} Gleichungen die wir bereits im Unterricht analytisch besprochen haben.\\
+Dieses Räuber-Beute System wird wie folgt beschrieben:
+\begin{align}
+\dot x(t) = x(3-x-2y)\\
+\dot y(t) = y(2-x-y)\,.
+\end{align}
+Das Euler-Verfahren funktioniert ähnlich wie im eindmensionalen Fall:
+\begin{align}
+x_{k+1} = x_{k} + \dot x(t)_{k} \\
+y_{k+1} = y_{k} + \dot y(t)_{k}\,.
+\end{align}
+Nutze das Euler-Verfahren um das Lotka-Volterra System zu lösen. Nutze verschiedene Anfangsbedingungen und analysiere zu welchen der analytisch beobachteten Fixpunkten sich das System hin bewegt. Stelle hierfür $x(t)$ und $y(t)$ dar. Welche der analytisch vorhergesagten Fixpunkte werden nicht beobachtet?
+
+\subexercise[%
+  topic={Zusatz: Oszillationen im Lotka-Volterra System},
+    ]
+Eine leicht veränderte Variante der Lotka-Volterra Gleichungen lautet
+\begin{align}
+\dot x(t) = x(\alpha -\beta y)\\
+\dot y(t) = y(\gamma -\delta y)\,.
+\end{align}
+Stelle verschiedene \emph{Trajektorien} $(x(t),y(t))$ grafisch dar. Varriiere dafür die Parameter $\alpha$, $\beta$, $\gamma$ und $\delta$. Wie verhält sich das System wenn du zum Beispiel $\alpha=2/3$, $\beta=4/3$, $\gamma=1$ und $\delta=1$ und $x_0=y_0=0.9$ verwendest?
+
+\subexercise[%
+  topic={Zusatz: \emph{Basins of Attraction} Lotka-Volterra System},
+    ]
+Recherchiere was die \emph{Basins of Attraction} sind und ermittle diese numerisch für eine bestimmte Parameter Wahl für die Lotka-Volterra Gleichungen.

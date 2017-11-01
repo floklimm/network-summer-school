@@ -1,0 +1,107 @@
+
+\exercise[
+    topic = Fraktale und Selbst\"ahnlichkeit
+]
+
+Saskia und Konrad haben beide die Koch-Kurve eingef\"uhrt, Konrad als 
+Lindenmayer-System und Saskia als Fraktal. Wir wollen nun dieses Fraktal
+f\"ur endliche 
+Iterationsschritte $n$ zeichen. Es wird 
+bestimmt durch das Lindenmayer-System
+\begin{subequations}
+\label{eq:Koch-L}
+\begin{align}
+    \mathrm{Variablen} &= \left\{F\right\} \\
+    \mathrm{Konstanten} &= \left\{+,-\right\} \\
+    \mathrm{Produktionsregeln} &= \left\{F\rightarrow F-F++F-F\right\} \\
+    \mathrm{Axiom} &= F.
+\end{align}
+\end{subequations}
+Hier bedeutet $F$, dass eine \emph{turtle} (bzw. ein Zeichenstift) eine
+bestimmte Strecke vorw\"arts geht, $-$, dass sich die \emph{turtle} um
+$60^\circ$ nach links dreht und $+$, dass sich die \emph{turtle} um
+$60^\circ$ nach rechts dreht.
+
+\subexercise[
+    topic = Anwenden der Iteration in L-System
+]
+    \label{ex:L-Koch}
+    Schreibe eine Funktion in Python, die f\"ur die Koch-Kurve die
+    Produktionsregeln $n$ mal auf das Axiom anwendet und so ein Wort produziert, mit
+    dem einer \textit{turtle} vermittelt werden kann, wie gezeichnet werden soll.
+
+\subexercise[
+    topic = Teenage Mutant L-System Turtle
+    ]
+
+    Das folgende Programm bietet einen Einstieg in das Zeichnen mit
+    einer \textit{turtle}. \footnote{Eine ausf\"uhrliche Dokumentation
+        der \textit{turtle}-Befehle findet ihr auf
+        \url{https://docs.python.org/2/library/turtle.html}
+    }
+        Spiele mit den Befehlen im ersten Teil des Codes herum. Was
+        macht die Funktion im letzten Teil des Codes?
+
+    \lstinputlisting{./code/turtleexample.py}
+
+\subexercise[
+    topic = Koch-Kurve zeichnen
+    ]
+
+    Schreibe eine Funktion, die das Ergebnis der $n$-fachen Iteration
+    des L-Systems (\ref{eq:Koch-L}) mithilfe der \emph{turtle} zeichnet.
+    Beachte, dass der Befehl ausgel\"ost durch $F$ skaliert werden muss
+    mit variierendem $n$ (d.h. dass der forward-Befehl mit $1/3^n$ der
+    urspr\"unglichen L\"ange aufgerufen werden muss).
+
+    Wie muss das Axiom ver\"andert werden, damit statt der Koch-Kurve
+    die Koch'sche Schneeflocke gezeichnet wird?
+
+\subexercise[
+    topic = Allgemeine L-Systeme
+]
+\label{ex:L-allg}
+Verallgemeinere deine Funktion aus Aufgabe \ref{ex:L-Koch}, sodass beliebige
+Lindenmayer-Systeme produziert werden, die $n$-fach iteriert werden.
+
+\exercise[
+    topic = Was ist das f\"ur 1 Fraktal?
+]
+Betrachte das L-System
+\begin{subequations}
+    \label{eq:Sierpinski-L}
+\begin{align}
+    \mathrm{Variablen} &= \left\{A,B\right\} \\
+    \mathrm{Konstanten} &= \left\{+,-\right\} \\
+    \mathrm{Produktionsregeln} &= \left\{A\rightarrow +B-A-B+,\
+        B\rightarrow -A+B+A-\right\} \\
+    \mathrm{Axiom} &= A.
+\end{align}
+\end{subequations}
+Hier stehen sowohl $A$ als auch $B$ daf\"ur, dass die \emph{turtle}
+vorw\"arts l\"auft. Bei $-$ soll sie sich um $60^\circ$ nach links
+drehen, bei $+$ um $60^\circ$ nach rechts.
+
+Beantworte die Frage aus dem Aufgabentitel.
+
+\subexercise[  
+topic = L-Systeme mit Speicher
+]
+Bei Systemen mit Speicher merkt sich die \emph{turtle} ihre aktuelle
+Position im zweidimensionalen Raum, sobald sie in der Zeichenkette eine Klammer $[$ findet. Sie
+folgt dann weiter den Befehlen in der Zeichenkette, bis sie auf das Ende
+des momentanen Befehls trifft, markiert durch $]$. Dann springt sie auf
+die Position im Raum zur\"uck, die sie bei $[$ hatte und folgt weiter
+der Zeichenkette. Betrachte das L-System
+\begin{subequations}
+    \label{eq:Farn-L}
+\begin{align}
+    \mathrm{Variablen} &= \left\{F\right\} \\
+    \mathrm{Konstanten} &= \left\{+,-,[,]\right\} \\
+    \mathrm{Produktionsregeln} &= \left\{ F \rightarrow
+        F[+F]F[-F]F\right\}\\
+\mathrm{Axiom} &= F.
+\end{align}
+\end{subequations}
+Der Winkel, den $+,-$ beschreiben, soll diesmal $180^\circ/7$ betragen.
+Welchem Objekt \"ahnelt das Ergebnis?
