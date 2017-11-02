@@ -12,7 +12,18 @@ The topics of the sheets are
 | ------------- | ------------- | ----- |
 | 1 | Introduction into Network Theory  | Creating graphs with Python and analysing them |
 | 2 | Graph Colouring | Node and edge colouring, coding greedy colouring algorithm|
-| 3 | Matrix Calculations and Effective Resistance | |
-| 4 | Contagion Dynamics | |
-| 5 | Dynamical Systems | |
-| 6 | Lotka-Volterra Equations and Fractals| |
+| 3 | Matrix Calculations and Effective Resistance |Eigenvalues, Laplace matrix |
+| 4 | Contagion Dynamics | SI model, vaccination, betweenness centrality|
+| 5 | Dynamical Systems | Verhulst dynamic, ODE, linear stability|
+| 6 | Lotka-Volterra Equations and Fractals| Euler method, drawing Lindenmeyer-systems with python|
+
+
+Most of the problems were created by us. Some of them were adapted or inspired from various sources, including:
+Geir Agnarsson, and Raymond Greenlaw. Graph Theory: Modeling, Applications, and Algorithms. Prentice-Hall, Inc., 2006.
+Steven H. Strogatz. Nonlinear Dynamics and Chaos: with Applications to Physics, Biology, Chemistry, and Engineering. Westview Press, 2014.
+Mark Newman. Networks: An Introduction. Oxford University Press, 2010.
+Material from the University of Oxford undergraduate course `B8.5 Graph Theory`
+
+Some of the graph plots were created with the tikz-network package https://github.com/hackl/tikz-network
+
+If you have general questions, please open an issue on Github or email Florian Klimm.
