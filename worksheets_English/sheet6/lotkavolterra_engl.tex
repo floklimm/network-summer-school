@@ -4,17 +4,22 @@
  topic = Numerical Solutions of Differential Equations
   ]
 
-Often it is not possible to solve \emph{Ordniary Differential Equations} (ODE) analytically. In such cases we have to use numerical solvers to find approximate solutions. One of the most simplistic procedure is the so-called \emph{Euler method}, which we outline below
+Often it is not possible to solve \emph{Ordniary Differential Equations}
+(ODE) analytically. In such cases we have to use numerical solvers to
+find approximate solutions. One of the most simplistic procedures is the
+so-called \emph{Euler method}, which we outline below.
 
-If we have the following ODE
+Given the ODE
 \begin{align}
 \dot y = f(t,y)\,.
 \end{align}
-with the inital value $y(t_0)=y_0$. Then we can compute the following value $y_{k+1}$ from the current value $(t_k,y_k)$ by using
+with the initial value $y(t_0)=y_0$, we can compute the following value $y_{k+1}$ from the current value $(t_k,y_k)$ by using
 \begin{align}
 \dot y_{k+1} =y_k + h\cdot f(t_k,y_k)\,.
 \end{align}
-This is a \emph{linear} approximation and $h$ gives the step size. We find the whole numerical solution by iteratively applying this formula. Usually, smaller step width result in better numerical solutions. 
+This is a \emph{linear} approximation and $h$ gives the step size. We
+find the whole numerical solution by iteratively applying this formula.
+Usually, smaller step widths result in a better numerical solutions. 
 
 
  \subexercise[%
@@ -27,7 +32,7 @@ In the beginning we want to analyse a one-dimensional problem which might be fam
 Find the analytical solution for the following ODE
 \begin{align}
 \dot x(t) = \lambda x(t)\\
-x(t_0)=x_0
+x(t_0)=x_0.
 \label{eqn:exponentielles}
 \end{align}
 
@@ -48,7 +53,9 @@ Optional: Vary $\lambda \in \{-2,-0.1,0.1,2\}$. Illustrate the different curves 
     ]
 
 
-We want to investigate the stability of the fixed points $x^{*}$. For this firstly use the analytical approach. Now we validate our findings numerically. For this we perturb the ODE a small step $\varepsilon$ from a fixed point and check with the Euler method whether the system returns to the fixed point or moves further away. Analyse the behaviour of all fixed points for $\lambda = \{-1,0,1\}$.
+We want to investigate the stability of the fixed points $x^{*}$. At
+first we use the analytical approach. Subsequently we validate our
+findings numerically. To do so we perturb the ODE a small step $\varepsilon$ from a fixed point and check with the Euler method whether the system returns to the fixed point or moves further away. Analyse the behaviour of all fixed points for $\lambda = \{-1,0,1\}$.
     
 
 \subexercise[%
@@ -64,16 +71,18 @@ To achieve this calculate and illustrate $\mathrm{Error}(h)=|x_{\mathrm{analytic
   topic={Numerical Solution of the Lotka-Volterra Equations},
     ]
 
-We can use the Euler method also for high dimensional ODE's. Here, we want to analyse the two-dimensional \emph{Lotka-Volterra equations}, which we discussed already earlier and describe the relationship between animal species.
+We can use the Euler method for high dimensional ODE's, as well.
+Here, we want to analyse the two-dimensional \emph{Lotka-Volterra equations}, 
+which we discussed already earlier and describe the relationship between animal species.
 
 
-This predator prey system is given by:
+This predator prey system is given by
 \begin{align}
 \dot x(t) = x(3-x-2y)\\
 \dot y(t) = y(2-x-y)\,.
 \end{align}
 
-The Euler method works similar to the one-dimensional case:
+The Euler method works similar to the one-dimensional case, as 
 \begin{align}
 x_{k+1} = x_{k} + \dot x(t)_{k} \\
 y_{k+1} = y_{k} + \dot y(t)_{k}\,.
@@ -92,7 +101,10 @@ Another variant of the Lotka-Volterra equations is given by
 
 
 
-Illustrate different \emph{trajectories} $(x(t),y(t))$ for many choices of the parameters  $\alpha$, $\beta$, $\gamma$ und $\delta$ and initial conditions. For example, try  $\alpha=2/3$, $\beta=4/3$, $\gamma=1$ and $\delta=1$ and $x_0=y_0=0.9$?
+Illustrate different \emph{trajectories} $(x(t),y(t))$ for many choices
+of the parameters  $\alpha$, $\beta$, $\gamma$ und $\delta$ and initial
+conditions. For example, try  $\alpha=2/3$, $\beta=4/3$, $\gamma=1$ and
+$\delta=1$ and $x_0=y_0=0.9$.
 
 \subexercise[%
   topic={Optional: \emph{Basins of Attraction} of the Lotka-Volterra System},

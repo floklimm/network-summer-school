@@ -1,6 +1,6 @@
 % !TEX root = ./sheet_06.tex
 \exercise[
-    topic = Fractals and Self-similarity
+    topic = Fractals and Self-Similarity
 ]
 
 
@@ -8,10 +8,10 @@ In the morning we discussed the \emph{Koch curve} from two perspectives, as a Li
 \begin{subequations}
 \label{eq:Koch-L}
 \begin{align}
-    \mathrm{Variablen} &= \left\{F\right\} \\
-    \mathrm{Konstanten} &= \left\{+,-\right\} \\
-    \mathrm{Produktionsregeln} &= \left\{F\rightarrow F-F++F-F\right\} \\
-    \mathrm{Axiom} &= F\,.
+    \mathrm{variables} &= \left\{F\right\} \\
+    \mathrm{constants} &= \left\{+,-\right\} \\
+    \mathrm{production rules} &= \left\{F\rightarrow F-F++F-F\right\} \\
+    \mathrm{axiom} &= F\,.
 \end{align}
 \end{subequations}
 
@@ -23,17 +23,18 @@ The $F$ indicates that the \emph{turtle} (which is a virtual drawing pen) moves 
     \label{ex:L-Koch}
     
     
-    We want to write a python function that applies the L-system rules iteratively $n$ times such that we receive a set of instructions that tells the turtle to draw a Koch curve. The \emph{axiom} is the initial condition.
+    We want to write a Python function that applies the L-system rules iteratively $n$ times such that we receive a set of instructions that tells the turtle to draw a Koch curve. The \emph{axiom} is the initial condition.
     
 \subexercise[
     topic = Teenage Mutant L-System Turtle
     ]
 
-The following programme is an introdution into the drawing with \textit{turtle}. \footnote{A detailed documentation of the \textit{turtle}-commands is available under
+The following program is an introdution to drawing with \textit{turtle}. \footnote{A detailed documentation of the \textit{turtle}-commands is available under
         \url{https://docs.python.org/2/library/turtle.html}
     }
 
-Change the commands in the first par of the programme and discuss how it changes the behaviour. What does the function in the end of the code achieve?
+Change the commands in the first par of the program and discuss how it
+changes the behaviour. What does the function at the end of the code achieve?
     \lstinputlisting{./code/turtleexample.py}
 
 \subexercise[
@@ -41,7 +42,7 @@ Change the commands in the first par of the programme and discuss how it changes
     ]
 
 
-Write a function that gives the result of a $n$-fold iteration of the L-Systems (\ref{eq:Koch-L}) to a \emph{turtle} and then draws it. Note that the forward movement $F$ has to be scaled by the number $n$ of iterations, specifically with $1/3^n$.
+Write a function that gives the result of an $n$-fold iteration of the L-System (\ref{eq:Koch-L}) to a \emph{turtle} and then draws it. Note that the forward movement $F$ has to be scaled by the number $n$ of iterations, specifically with $1/3^n$.
 
 
 How do we have to change the axiom such that not the Koch curve but the Koch snowflake is produced?
@@ -63,11 +64,11 @@ We discuss the  L-system
 \begin{subequations}
     \label{eq:Sierpinski-L}
 \begin{align}
-    \mathrm{Variablen} &= \left\{A,B\right\} \\
-    \mathrm{Konstanten} &= \left\{+,-\right\} \\
-    \mathrm{Produktionsregeln} &= \left\{A\rightarrow +B-A-B+,\
+    \mathrm{variables} &= \left\{A,B\right\} \\
+    \mathrm{constants} &= \left\{+,-\right\} \\
+    \mathrm{production rules} &= \left\{A\rightarrow +B-A-B+,\
         B\rightarrow -A+B+A-\right\} \\
-    \mathrm{Axiom} &= A\,.
+    \mathrm{axiom} &= A\,.
 \end{align}
 \end{subequations}
 
@@ -79,18 +80,18 @@ Which fractal is created?
 topic = Optional: L-Systems with Memory
 ]
 
-L-systems with memory mean that the turtle saves the current position in two-dimensional space when the command $[$ occurs. It then follows the commands inside the bracket until the command $]$. Then it `jumps' to the saved position from $[$ and follows further commands. 
+L-systems with memory denote systems where the turtle saves the current position in two-dimensional space when the command $[$ occurs. It then follows the commands inside the bracket until the command $]$. Then it `jumps' to the saved position from $[$ and follows further commands. 
 
 We discuss the L-system 
 \begin{subequations}
     \label{eq:Farn-L}
 \begin{align}
-    \mathrm{Variablen} &= \left\{F\right\} \\
-    \mathrm{Konstanten} &= \left\{+,-,[,]\right\} \\
-    \mathrm{Produktionsregeln} &= \left\{ F \rightarrow
+    \mathrm{variables} &= \left\{F\right\} \\
+    \mathrm{constants} &= \left\{+,-,[,]\right\} \\
+    \mathrm{production rules} &= \left\{ F \rightarrow
         F[+F]F[-F]F\right\}\\
-\mathrm{Axiom} &= F\,.
+\mathrm{axiom} &= F\,.
 \end{align}
 \end{subequations}
 
-$F$ is again a forward movement and $+,-$ indicate rotations by $180^\circ/7$. What does this $L$-system resembles? 
+$F$ is again a forward movement and $+,-$ indicate rotations by $180^\circ/7$. What does this $L$-system resemble? 
