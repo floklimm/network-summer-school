@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.21)  1 NOV 2017 13:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.21)  2 NOV 2017 09:28
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -404,13 +404,19 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 )))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
@@ -422,7 +428,17 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count94
+))
+\Gin@req@height=\dimen105
+\Gin@req@width=\dimen106
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
 Package xcolor Info: Model `RGB' extended on input line 1353.
@@ -441,14 +457,14 @@ File: dvipsnam.def 2014/10/14 v3.0j Driver-dependent file (DPC,SPQR)
 \lst@gtempboxa=\box26
 \lst@token=\toks24
 \lst@length=\count96
-\lst@currlwidth=\dimen105
+\lst@currlwidth=\dimen107
 \lst@column=\count97
 \lst@pos=\count98
-\lst@lostspace=\dimen106
-\lst@width=\dimen107
+\lst@lostspace=\dimen108
+\lst@width=\dimen109
 \lst@newlines=\count99
 \lst@lineno=\count100
-\lst@maxwidth=\dimen108
+\lst@maxwidth=\dimen110
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
@@ -472,11 +488,11 @@ Package: amstext 2000/06/29 v2.01
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks25
-\ex@=\dimen109
+\ex@=\dimen111
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen110
+\pmbraise@=\dimen112
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
@@ -493,7 +509,7 @@ LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box28
 \strutbox@=\box29
-\big@size=\dimen111
+\big@size=\dimen113
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \macc@depth=\count108
@@ -506,12 +522,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \column@=\count113
 \maxfields@=\count114
 \andhelp@=\toks27
-\eqnshift@=\dimen112
-\alignsep@=\dimen113
-\tagshift@=\dimen114
-\tagwidth@=\dimen115
-\totwidth@=\dimen116
-\lineht@=\dimen117
+\eqnshift@=\dimen114
+\alignsep@=\dimen115
+\tagshift@=\dimen116
+\tagwidth@=\dimen117
+\totwidth@=\dimen118
+\lineht@=\dimen119
 \@envbody=\toks28
 \multlinegap=\skip45
 \multlinetaggap=\skip46
@@ -528,7 +544,7 @@ Language: english 2012/08/20 v3.3p English support from the babel system
 (/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2014/09/25 3.9l Babel common definitions
 \babel@savecnt=\count115
-\U@D=\dimen118
+\U@D=\dimen120
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
@@ -588,8 +604,8 @@ File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
 \pgfutil@everybye=\toks30
-\pgfutil@tempdima=\dimen119
-\pgfutil@tempdimb=\dimen120
+\pgfutil@tempdima=\dimen121
+\pgfutil@tempdimb=\dimen122
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
 sts.tex))
@@ -598,14 +614,14 @@ sts.tex))
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
-\pgf@x=\dimen121
-\pgf@xa=\dimen122
-\pgf@xb=\dimen123
-\pgf@xc=\dimen124
-\pgf@y=\dimen125
-\pgf@ya=\dimen126
-\pgf@yb=\dimen127
-\pgf@yc=\dimen128
+\pgf@x=\dimen123
+\pgf@xa=\dimen124
+\pgf@xb=\dimen125
+\pgf@xc=\dimen126
+\pgf@y=\dimen127
+\pgf@ya=\dimen128
+\pgf@yb=\dimen129
+\pgf@yc=\dimen130
 \c@pgf@counta=\count143
 \c@pgf@countb=\count144
 \c@pgf@countc=\count145
@@ -614,7 +630,7 @@ sts.tex))
 \pgfutil@tempcntb=\count148
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen129
+\pgfmath@dimen=\dimen131
 \pgfmath@count=\count149
 \pgfmath@box=\box30
 \pgfmath@toks=\toks31
@@ -642,24 +658,24 @@ erarithmetics.code.tex)))
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count150
 ))
-\pgffor@iter=\dimen130
-\pgffor@skip=\dimen131
+\pgffor@iter=\dimen132
+\pgffor@skip=\dimen133
 \pgffor@stack=\toks34
 \pgffor@toks=\toks35
 )
 \psLoopIndex=\count151
 
 `PSTricks' v2.60  <2014/10/25> (tvz)
-\pst@dima=\dimen132
-\pst@dimb=\dimen133
-\pst@dimc=\dimen134
-\pst@dimd=\dimen135
-\pst@dimg=\dimen136
-\pst@dimh=\dimen137
-\pst@dimm=\dimen138
-\pst@dimn=\dimen139
-\pst@dimo=\dimen140
-\pst@dimp=\dimen141
+\pst@dima=\dimen134
+\pst@dimb=\dimen135
+\pst@dimc=\dimen136
+\pst@dimd=\dimen137
+\pst@dimg=\dimen138
+\pst@dimh=\dimen139
+\pst@dimm=\dimen140
+\pst@dimn=\dimen141
+\pst@dimo=\dimen142
+\pst@dimp=\dimen143
 \pst@hbox=\box31
 \pst@ibox=\box32
 \pst@boxg=\box33
@@ -676,24 +692,24 @@ erarithmetics.code.tex)))
 \@zero=\count162
 \pst@toks=\toks36
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pstricks/pstricks.con)
-\psunit=\dimen142
-\psxunit=\dimen143
-\psyunit=\dimen144
+\psunit=\dimen144
+\psxunit=\dimen145
+\psyunit=\dimen146
 \pst@C@@rType=\count163
-\pslinewidth=\dimen145
-\psk@startLW=\dimen146
-\psk@endLW=\dimen147
+\pslinewidth=\dimen147
+\psk@startLW=\dimen148
+\psk@endLW=\dimen149
 \pst@customdefs=\toks37
-\pslinearc=\dimen148
-\pst@symbolStep=\dimen149
-\pst@symbolWidth=\dimen150
-\pst@symbolLinewidth=\dimen151
+\pslinearc=\dimen150
+\pst@symbolStep=\dimen151
+\pst@symbolWidth=\dimen152
+\pst@symbolLinewidth=\dimen153
 \everypsbox=\toks38
-\psframesep=\dimen152
-\pslabelsep=\dimen153
-\sh@wgridXunit=\dimen154
-\sh@wgridYunit=\dimen155
-\pst@shift=\dimen156
+\psframesep=\dimen154
+\pslabelsep=\dimen155
+\sh@wgridXunit=\dimen156
+\sh@wgridYunit=\dimen157
+\pst@shift=\dimen158
 )
 File: pstricks.tex 2014/10/25 v2.60 `PSTricks' (tvz,hv)
 
@@ -731,25 +747,7 @@ Package: pst-tree 2009/01/25 package wrapper for pst-tree.tex
 \pstree@stop=\count174
 )
 File: pst-tree.tex 2011/02/28 1.12 `pst-tree' (tvz,hv)
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
-)
-Package graphics Info: Driver file: pdftex.def on input line 94.
-)
-\Gin@req@height=\dimen157
-\Gin@req@width=\dimen158
-)
-(./worksheet_02.aux)
+) (./worksheet_02.aux)
 \openout1 = `worksheet_02.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -792,9 +790,7 @@ LaTeX Font Info:    ... okay on input line 7.
 \MPnumerator=\count179
 \makeMPintoPDFobject=\count180
 \everyMPtoPDFconversion=\toks40
-)
-\c@lstlisting=\count181
- (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -833,6 +829,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+\c@lstlisting=\count181
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
 (Font)              scaled to size 13.82408pt on input line 13.
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
@@ -1003,26 +1000,14 @@ Non-PDF special ignored!
 _colouring-eps-converted-to.pdf>]
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
 (Font)              scaled to size 9.60007pt on input line 103.
-Package epstopdf Info: Source file: <isomorphismus.eps>
-(epstopdf)                    date: 2016-07-18 12:32:46
-(epstopdf)                    size: 29553918 bytes
-(epstopdf)             Output file: <isomorphismus-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-11-01 11:31:34
-(epstopdf)                    size: 714979 bytes
-(epstopdf)             Command: <epstopdf --outfile=isomorphismus-eps-converted
--to.pdf isomorphismus.eps>
-(epstopdf)             \includegraphics on input line 120.
-Package epstopdf Info: Output file is already uptodate.
 
-<isomorphismus-eps-converted-to.pdf, id=15, 3061.4375pt x 1592.95125pt>
-File: isomorphismus-eps-converted-to.pdf Graphic file (type pdf)
+<isomorphism_cut.pdf, id=15, 479.2409pt x 283.28706pt>
+File: isomorphism_cut.pdf Graphic file (type pdf)
 
-<use isomorphismus-eps-converted-to.pdf>
-Package pdftex.def Info: isomorphismus-eps-converted-to.pdf used on input line 
-120.
-(pdftex.def)             Requested size: 304.72562pt x 158.55095pt.
- [2 <./petersen_graph-eps-converted-to.pdf> <./isomorphismus-eps-converted-to.p
-df>]
+<use isomorphism_cut.pdf>
+Package pdftex.def Info: isomorphism_cut.pdf used on input line 120.
+(pdftex.def)             Requested size: 304.72562pt x 180.13599pt.
+ [2 <./petersen_graph-eps-converted-to.pdf> <./isomorphism_cut.pdf>]
 Package epstopdf Info: Source file: <graph_colouring.eps>
 (epstopdf)                    date: 2016-07-17 22:44:06
 (epstopdf)                    size: 1005299 bytes
@@ -1034,8 +1019,7 @@ ed-to.pdf graph_colouring.eps>
 (epstopdf)             \includegraphics on input line 143.
 Package epstopdf Info: Output file is already uptodate.
 File: graph_colouring-eps-converted-to.pdf Graphic file (type pdf)
-
-<use graph_colouring-eps-converted-to.pdf>
+ <use graph_colouring-eps-converted-to.pdf>
 Package pdftex.def Info: graph_colouring-eps-converted-to.pdf used on input lin
 e 143.
 (pdftex.def)             Requested size: 135.43245pt x 100.48073pt.
@@ -1050,8 +1034,8 @@ File: t1txtt.fd 2000/12/15 v3.1
 (./worksheet_02.aux) ) 
 Here is how much of TeX's memory you used:
  13974 strings out of 493089
- 232054 string characters out of 6134841
- 305751 words of memory out of 5000000
+ 231996 string characters out of 6134841
+ 305700 words of memory out of 5000000
  17160 multiletter control sequences out of 15000+600000
  42059 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1060,16 +1044,19 @@ Here is how much of TeX's memory you used:
 exnansi.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/bitstrea/charter/bc
 hb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/bitstrea/charter/bchr8
 a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.
+pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
+fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7m.
 pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-
-chr7m.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/mathdesign/mdb
-ch/md-chr7t.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/mathdesi
-gn/mdbch/md-chr7y.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ma
-thdesign/mdbch/md-chri7m.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
-blic/txfonts/t1xtt.pfb>
-Output written on worksheet_02.pdf (4 pages, 807521 bytes).
+chr7t.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/mathdesign/mdb
+ch/md-chr7y.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/mathdesi
+gn/mdbch/md-chri7m.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/t
+xfonts/t1xtt.pfb>
+Output written on worksheet_02.pdf (4 pages, 200207 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
+ 83 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
