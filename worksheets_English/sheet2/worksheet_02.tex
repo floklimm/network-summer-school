@@ -8,7 +8,7 @@
 
   \sheet[%
   number=2,
-      topic={Graph },
+      topic={Graphs },
       %deadline=Deadline: \today,
     ]
 
@@ -69,7 +69,10 @@ Find the chromatic number $\chi$ of the following graphs in depency of the numbe
   topic=Zoo director,
     ]
   
-  A zoo director wants to host the following five animals in as few cages as possible: Eagle, snake, mouse, lion, and goat. Find the necessary number of cages of the following animals are not allowed in the same cage: eagle \& snake, snake \& mouse, lion \& goat. 
+  A zoo director wants to host the following five animals in as few
+  cages as possible: Eagle, snake, mouse, lion, and goat. Find the
+  necessary number of cages if the following animals are not allowed in
+  the same cage: eagle \& snake, snake \& mouse, lion \& goat.
   
 
 \subexercise[%
@@ -100,7 +103,10 @@ In Figure~\ref{petersen} you can see the so called \emph{Petersen graph}. Find i
   topic=An upper bound for the chromatic number,
     ]
     
-Be $G$ a graph with $n$ nodes and {\bf not} the complete graph $K_n$. Show that $\chi (G) < n$. \emph{Hint: It might be useful to first prove the following lemma: Shall $c(V)$ a proper colouring of the graph $G=(V,E)$. Then $c(V)$ is also a proper colouring of the graph $G'=(V,E')$ with $E'\subset E$ }
+Let $G$ be a graph with $n$ nodes and {\bf not} the complete graph
+$K_n$. Show that $\chi (G) < n$. \emph{Hint: It might be useful to first
+    prove the following lemma: Shall $c(V)$ be a proper colouring of the graph $G=(V,E)$. 
+    Then $c(V)$ is also a proper colouring of the graph $G'=(V,E')$ with $E'\subset E$ }
     
 
 
@@ -137,7 +143,9 @@ The set of all 2-regular graphs can also be called the \emph{disjoint union of a
   topic=Edge Colouring of a Graph,
     ]
 
-Find a proper edge colouring for the graph shown below. The colouring should use exactly $\Delta$ colour, where $\Delta$ is the graphs maximal degree. What is the chromatic index $\chi'$ of the graph?
+Find a proper edge colouring for the graph shown below. The colouring
+should use exactly $\Delta$ colour, where $\Delta$ is the graph's maximal
+degree. What is the chromatic index $\chi'$ of the graph?
 
 \begin{figure}[h]
 \includegraphics[width=0.4\textwidth]{graph_colouring.eps}
@@ -162,18 +170,20 @@ Compare for these graphs the chromatic index  $\chi'$  with the maximal degree $
   topic = Coding the Greedy Colouring
     ]
 
-We want to programme the \emph{greedy node colouring algorithm} and use it on different networks.
+We want to program the \emph{greedy node colouring algorithm} and use it on different networks.
 
 \subexercise[%
   topic=Greedy Colouring,
     ]
     
     
-    Create a function that takes as input the adjacency matrix $A$ of a graph and an ordering of the nodes and returns a proper colouring of the graph by using the greedy colouirng algorithm. 
+    Create a function that takes as input the adjacency matrix $A$ of a
+    graph and an ordering of the nodes and returns a proper colouring of
+    the graph by using the greedy colouring algorithm. 
     
 
 \subexercise[%
-  topic=Greedy Coloruing of Graph Models,
+  topic=Greedy Colouring of Graph Models,
     ]
     
 Use the greedy colouring algorithm on the graphs from Subexercise~\ref{subseq:graphen} with a chosen size of $n=10$. Use different random orderings of the nodes. Compare the results for different realisations amongst each other and with the analytical formulas you derived for the chromatic number $\chi$.
@@ -198,9 +208,20 @@ Using this insights compute numerically the time complexity of the greedy algori
 
 
 
-Load the network from the file  {\tt everglades\textunderscore adjazenz.txt}. It represents the food chain of animals in the Everglades national park in Florida. The animals are connected if they are in a predator--prey relationship. A zoo wants to place all $63$ animals in as few cages as possible. To avoid them killing each other no pair of animals is allowed to be kept in the cage if the one potentially eats the other. The file  {\tt everglades\textunderscore namen.txt} gives the names of the animals.
+Load the network from the file  {\tt everglades\textunderscore
+    adjazenz.txt}. It represents the food chain of animals in the
+Everglades national park in Florida. The animals are connected if they
+are in a predator--prey relationship. A zoo wants to place all $63$
+animals in as few cages as possible. To avoid them killing each other no
+pair of animals is allowed to be kept in the cage if one potentially
+preys on the other. The file  {\tt everglades\textunderscore namen.txt}
+gives the names of the animals.
 
-Formulate the problem as a graph theoretical one and solve it numerically. For this use the greedy colouring algorithm on random orders of the nodes. Is it possible to check all orderings? Illustrate the graph and show the cage assignment that uses the least number of cages.
+Formulate the problem as a graph theoretical one and solve it
+numerically. For this use the greedy colouring algorithm on random
+orders of the nodes. Is it possible to check all orderings? Illustrate
+the graph and show the cage assignment that uses the least number of
+cages.
 
 \exercise[%
   topic=Chromatic Polynom,
