@@ -21,13 +21,21 @@
 
 \label{rossleben}
 
-The aim of this task is the creation of a network that represents the building of the Monastery School Ro\ss leben. The network's rooms are nodes and a pair of nodes is connected with an edge if there is a \emph{direct} connection between them. In the end the network should be available in a file as adjacency matrix such that it can be loaded into python and further analysed.
+The aim of this task is the creation of a network that represents the
+building of the Monastery School Ro\ss leben. The network's rooms are
+nodes and a pair of nodes is connected with an edge if there is a
+\emph{direct} connection between them. In the end the network should be
+available in a file as an adjacency matrix or edge list such that it can be loaded into
+python and further analysed.
 
  \subexercise[%
   topic=Dividing the Problem up,
     ]
 
-Discuss in a large group how the problem could be divided such that many of you can work in parallel on it. In the end there should be one file with the whole network. Create also a second file that gives the name of the rooms, such as:
+Discuss in a large group how the problem could be divided such that many
+of you can work in parallel on it. In the end there should be one file
+with the whole network. Create also a second file that gives the name of
+the rooms, such as:
 
 
 \begin{tabular}[h]{c|c|c}
@@ -43,7 +51,7 @@ Node number & floor & room description \\ \hline
   topic= Degree distribution,
     ]
 
-Calculate the degree distribution $P(k)$ of the network. Illustrate it as a histogram.
+Extract the degree distribution $P(k)$ of the network. Illustrate it as a histogram.
 
 
 \exercise[%
@@ -66,7 +74,11 @@ Optional:  Average $t_{\mathrm{end}}(\beta)$ for $s=20$ simulations. How does th
   topic= Vulnerable Courses,
     ]
 
-The contagion again starts from laboratory of course $5.3$. We want to determine which of the other five courses is most vulnerable to the contagion. Simulate the SI-Prozess for $\beta=0.01$ and investigate at which point in time the rooms of the other courses and the Administration Office are infected. 
+The contagion again starts from laboratory of course $5.3$. We want to
+determine which of the other five courses is most vulnerable to the
+contagion. Simulate the SI-Process for $\beta=0.01$ and investigate at
+which point in time the rooms of the other courses and the
+Administration office are infected. 
 
 Which rooms are most vulnerable? How can you explain these results?
 
@@ -76,18 +88,25 @@ Which rooms are most vulnerable? How can you explain these results?
       ]
 
 
-In addition to the degree $k_i$ of a node there exist also other measures of centrality of a node, for example, the \emph{betweenness} centrality $g_i$. It measures in how many shortest paths between all pairs of nodes a certain node $i$ is. To be specific it is defined as 
+In addition to the degree $k_i$ of a node there exist also other
+measures of centrality of a node, for example, the \emph{betweenness}
+centrality $g_i$. It measures in how many shortest paths between all
+pairs of nodes a certain node $i$ exists. To be specific it is defined as 
 \begin{align}
 g_i = \sum_{s\neq i\neq t} \frac{\sigma_{st}(i)}{\sigma_{st}}\,,
 \end{align}
-where $\sigma_{st}$ is the number of shortest paths between node $s$ and $t$ and  $\sigma_{st}(i)$ the number of these paths that go through node $i$. For finding all shortest paths between nodes $s$ and $t$ in a network $G$ you can use the function  \texttt{networkx.all\_shortest\_paths(G,s,t)}.
+where $\sigma_{st}$ is the number of shortest paths between nodes $s$
+and $t$ and  $\sigma_{st}(i)$ the number of these paths that go through
+node $i$. For finding all shortest paths between nodes $s$ and $t$ in a
+network $G$ you can use the function
+\texttt{networkx.all\_shortest\_paths(G,s,t)}.
 
 \subexercise[%
   topic= Betweenness Centrality of Graph Models,
     ]
 
 \begin{itemize}
-\item Sketch einen path graph $P_n$ and find $g_i\,\forall\ i \in V$ in dependence of the number $n$ of nodes.
+\item Sketch a path graph $P_n$ and find $g_i\,\forall\ i \in V$ in dependence of the number $n$ of nodes.
 \item Calculate the betweenness $g_i$ for the cycle graph $C_n$.
 \item Which two graphs with $n$ nodes have $g_i=0\,\forall\ i \in V$? Show that both are not isomorph to each other if $n>1$.
 \end{itemize}
@@ -124,7 +143,7 @@ Optional: Generalise this for $c$ of such $n$-cliques that are connected through
   topic =  Contagion Dynamic -- Vaccination
     ]
 
-We want to investigate how the contagious dynamic is slowed if we vaccinate certain rooms. We achieve this by removing these rooms from the network.
+We want to investigate how the contagion process is slowed down if we vaccinate certain rooms. We achieve this by removing these rooms from the network.
 
 \subexercise[%
   topic= Random Vaccination,
@@ -132,14 +151,20 @@ We want to investigate how the contagious dynamic is slowed if we vaccinate cert
 \label{impfung}
 
 
-At first we want to vaccinate the rooms randomly. Vaccinate a single room and investigate whether the time $t_{\mathrm{end}}$ to the total infection is changed. Repeat this experiment a couple of times. Does the behaviour change under this repetitions? Interpret the result.
+At first we want to vaccinate the rooms randomly. Vaccinate a single
+room and investigate whether the time $t_{\mathrm{end}}$ to the total
+infection is changed. Repeat this experiment a couple of times. Does the
+behaviour change under this repetitions? Interpret the result.
 
 
 \subexercise[%
   topic= Random Next Neighbour Vaccination,
     ]
 
-Now we will repeat the random vaccination but use our insights from the \emph{Friendship-Paradox}. We do not vaccinated a random room but a random neighbour of a random room. Repeat the experiments and investigate whether the behaviour is changed noticeably.
+Now we will repeat the random vaccination but use our insights from the
+\emph{friendship paradox}. We do not vaccinate a random room but a
+random neighbour of a random room. Repeat the experiments and
+investigate whether the behaviour is changed notably.
 
 \subexercise[%
   topic= Systematic Investigation of the Vaccination Success,
@@ -148,7 +173,7 @@ Now we will repeat the random vaccination but use our insights from the \emph{Fr
 After these initial observations we will analyse the impact of vaccinations systematically. For this we vaccinate not only a single room but iteratively rooms, at first one, then a second, and so on, until we removed half of all rooms. For each of these iterative steps we calculate:
 \begin{itemize}
 \item The number $N_{1}$ of nodes that are infected after a single step.
-\item The number $N_{10}$ of nodes that are infected after two steps.
+\item The number $N_{10}$ of nodes that are infected after ten steps.
 \item The number $N_{100}$ of nodes that are infected after a hundred steps.
 \item The number $N_{1000}$ of nodes that are infected after a thousand steps.
 \end{itemize}
