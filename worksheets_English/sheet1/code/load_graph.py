@@ -1,10 +1,13 @@
 # -*- coding: utf-8 -*-
-# Importieren von benoetigten Bibliotheken
+# importing libraries
 import numpy as np
-# daten laden
-H=np.loadtxt("huhn.txt")
 
+# load data
+H = np.loadtxt("huhn.txt")
+
+#symmetrize 
 H2 = H + np.transpose(H)
-H2=H2
-H3=np.ceil(H2)
+H2 = H2
+H3 = np.ceil(H2)
+
 np.savetxt("hennen.txt",H2, fmt='%1.0f')

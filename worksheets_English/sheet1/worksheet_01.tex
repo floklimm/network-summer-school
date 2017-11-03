@@ -4,7 +4,7 @@
 
   \sheet[%
   number=1,
-      topic={Introduction into Network Theory},
+      topic={Introduction to Network Theory},
       %deadline=Deadline: \today,
     ]
 
@@ -12,30 +12,33 @@
 \noindent\rule{12cm}{0.4pt}
 
   \exercise[%
-  topic = Create Graphs with Python.
+  topic = Create Graphs with Python
     ]
 
-We want to use the coding language Python to create graphs and analyse them. The function {\tt pathgraph} in the file {\tt pathgraph.py} creates the adjacency matrix of the \emph{pathgraph}.
+We want to use the coding language Python to create graphs and analyse them. The function {\tt pathgraph} in the file {\tt pathgraph.py} creates the adjacency matrix of the \emph{path graph}.
 
   
-\lstinputlisting{./code/pfadgraph.py}
+\lstinputlisting{./code/pathgraph.py}
 
 
 
  \subexercise[%
-  topic=Understanding the Programme and Adapting it,
+  topic=Understanding the Program and Adapting it,
     ]
 
 Go line by line through the code shown above to understand what is happening. Particularly answer the following questions:
 
 \begin{enumerate}
-\item What are input and output of the function {\tt pathgraph( n )}?
-\item How does the adjacency matrix look like for each step through the FOR-Loop? Check your supposition by inserting the command {\tt print(A)} after line $8$.
+\item What are the input and output of the function {\tt pathgraph( n )}?
+\item How does the adjacency matrix look like at each step of the
+    FOR-Loop? Check your conjecture by inserting the command {\tt
+        print(A)} after line $17$.
 \item Why does the FOR-loop go from $0$ to $n-1$?
-\item What happens in line $10$? What would happen without this command? Check your supposition by commenting out this line.
+\item What happens in line $22$? What would happen without this command?
+    Check your conjecture by commenting out this line.
 \end{enumerate}
 
-The benefit of functions is that we can reuse them mutliple times in a programme. Extend the above programme such that it prints not only the adjacency matrix of a path with ten but also fifteen nodes.
+The benefit of functions is that we can reuse them mutliple times in a program. Extend the above program such that it prints not only the adjacency matrix of a path with ten but also fifteen nodes.
 
  \subexercise[%
   topic=Creating Graphs,
@@ -56,13 +59,16 @@ Create functions that create other synthetical graphs consisting of $n$ nodes. Y
     ]
 
 
-Usually, we represent graphs as adjacency matrices. This is useful for their further mathematical analysis. Sometimes is it appropriate to visualise them with the help of a computer. One tool for this is the library {\tt networkx}. Below is a small example of a programme that creates a pathgraph and its visualisation.
+Usually, we represent graphs as adjacency matrices. This is useful for their further mathematical analysis. Sometimes is it appropriate to visualise them with the help of a computer. One tool for this is the library {\tt networkx}. Below is a small example of a program that creates a path graph and its visualisation.
 
-\lstinputlisting{./code/graph_darstellen.py}
+\lstinputlisting{./code/draw_graph.py}
 
-First, we have to load the necessary libraries with the {\sc import} command. Second, we create the adjacency matrix of a pathgraph and then make it into a `networkx' object. Finally, this can then be used by the fucntion {\tt draw()}  to create an illustration.
+First, we have to load the necessary libraries with the {\sc import}
+command. Second, we create the adjacency matrix of a path graph and
+convert it to a `networkx' object. Finally, this can be used by the
+fucntion {\tt draw()}  to create an illustration.
 
-Now, adopt this programme to illustrate the other networks from Subexercise~\ref{subex:creating} in size $n=8$.
+Now, adopt this program to illustrate the other networks from Subexercise~\ref{subex:creating} in size $n=8$.
 
   \exercise[%
   topic=Investigating Graphs with Python
@@ -77,13 +83,13 @@ We want the investigate the relationship between the number $n$ of nodes in a ne
 
 
 \begin{enumerate}
-\item Create a function that has as input the adjacency matrix of a network and as output the number of edges. (\emph{Hint: The numpy-function {\tt sum()} could be useful.})
-\item Use a FOR-loop to create networks of varying size $n$ and count its number of edges. Save the results into a vector.
-\item  Use {\tt maplotlib} to illustrate the relationship $m(n)$ for the different network models
+\item Create a function that takes the adjacency matrix of a network as
+    an input and returns the number of edges as output. (\emph{Hint: The numpy-function {\tt sum()} could be useful.})
+\item Use a FOR-loop to create networks of varying size $n$ and count
+    their number of edges. Save the results into a vector.
+\item  Use {\tt matplotlib} to illustrate the relationship $m(n)$ for the different network models
 \item Compare these numerical results with the analytical formulas we derived earlier during the lecture.
 \end{enumerate}
-
-
 
 
  \subexercise[%
@@ -96,15 +102,22 @@ So far we focussed on network models. Now we want to compare these with real (em
 We can use the function {\tt loadtxt} to load the adjacency matrix from a text file.
 
 \begin{lstlisting}
-H = np.loadtxt("hennen.txt")
+H = np.loadtxt("hens.txt")
 \end{lstlisting}
 
-The network caries the information which of the $32$ chicken is fighting against which other ones.
+The network carries the information which of the $32$ chickens is fighting against which other ones.
 
 Count the number of edges in this network, illustrate it, and compare it with the network models we introduced earlier. Which model describes the data best?
 
 
-Repeat this for a second network {\tt florence.txt}. Is one of the networks able to describe the data well? This network describes the marriage relationships between the noble families in Florence in the 13th century. In the file {\tt florence\_families.txt}  you find the names of the families (the line number corresponds with the node number). Illustrate the network and colour-code each node with its degree $k_i$ and a label giving its name. Which family has the most connections?
+Repeat this for a second network {\tt florence.txt}. Is one of the
+networks able to describe the data well? This network describes the
+marriage relationships between the noble families in Florence in the
+13th century. In the file {\tt florence\_families.txt}  you find the
+names of the families (the line number corresponds with the node
+number). Illustrate the network and colour-code each node with its
+degree $k_i$ and a label giving its name. Which family has the most
+connections?
 
 
 
@@ -116,12 +129,18 @@ Repeat this for a second network {\tt florence.txt}. Is one of the networks able
   topic=Multipartite Networks,
     ]
 
-Similar to bipartite networks with two groups of nodes there exists also \emph{multipartite} networks, also called $p$-partite networks, which consist of $p$ groups of nodes. Edges are only created between the groups but never inside of them. If all possible edges exist we call them \emph{complete multipartite graphs}. Create a function that creates such $p$-partite networks with each of the $p$ groups having the same size $g$.
+Similar to bipartite networks with two groups of nodes there exist
+\emph{multipartite} networks, also called $p$-partite networks, which
+consist of $p$ groups of nodes. Edges are only created between the
+groups but never inside of them. If all possible edges exist we call
+them \emph{complete multipartite graphs}. Create a function that creates
+such $p$-partite networks with each of the $p$ groups having the same
+size $g$.
 
 Find analytic formulas for the number $n$ of nodes in the whole graph and the number $m$ of edges. Check your results numerically and illustrate the network.
 		
 		\subexercise[%
-  topic=Nodes with the same Degree,
+  topic=Nodes with Equal Degree,
     ]
     
     Prove that every graph $G$ with more than one node has at least two nodes with the same degree.
@@ -131,7 +150,7 @@ Find analytic formulas for the number $n$ of nodes in the whole graph and the nu
   topic=$3$-regular graphs,
     ]
     
-    A graph is called $r$-regular if every node has the degree $r$. Prove that there exists a $3$-regular graph of $n$ nodes if and only if, $n>3$ and $n$ is even.
+    A graph is called $r$-regular if every node has degree $r$. Prove that there exists a $3$-regular graph of $n$ nodes if and only if, $n>3$ and $n$ is even.
     		
 		
 		\subexercise[%
