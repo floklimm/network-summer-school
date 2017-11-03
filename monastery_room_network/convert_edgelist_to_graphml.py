@@ -23,6 +23,8 @@ mapping = {
         'BF4': 'B32',
         }
 
+G = nx.relabel_nodes(G,mapping)
+
 nx.write_graphml(G,'./monastery_room_network.graphml')
 nx.write_edgelist(G,'./monastery_room_network.edgelist')
 
