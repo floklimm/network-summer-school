@@ -28,8 +28,8 @@ Most of the problems were created by us. Some of them were adapted or inspired f
 
 - Material from the University of Oxford undergraduate course `B8.5 Graph Theory`
 
-A manuscript explaining in more details our experience is under Review by the journal *Network Science*. You can find the manuscript http://www.dtc.ox.ac.uk/people/14/klimmf/manuscripts/2017KlimmMaier_NetworkScienceSummerSchool_Manuscript.pdf "here".
+A manuscript explaining in more details our experience is under Review by the journal *Network Science*. You can find the manuscript [here](http://www.dtc.ox.ac.uk/people/14/klimmf/manuscripts/2017KlimmMaier_NetworkScienceSummerSchool_Manuscript.pdf).
 
-Some of the graph plots were created with the tikz-network package https://github.com/hackl/tikz-network
+Some of the graph plots were created with the [tikz-network package](https://github.com/hackl/tikz-network).
 
 If you have general questions, please open an issue on Github or email Florian Klimm.
