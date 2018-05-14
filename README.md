@@ -19,13 +19,16 @@ The topics of the sheets are
 
 
 Most of the problems were created by us. Some of them were adapted or inspired from various sources, including:
-Geir Agnarsson, and Raymond Greenlaw. Graph Theory: Modeling, Applications, and Algorithms. Prentice-Hall, Inc., 2006.
 
-Steven H. Strogatz. Nonlinear Dynamics and Chaos: with Applications to Physics, Biology, Chemistry, and Engineering. Westview Press, 2014.
+- Geir Agnarsson, and Raymond Greenlaw. Graph Theory: Modeling, Applications, and Algorithms. Prentice-Hall, Inc., 2006.
 
-Mark Newman. Networks: An Introduction. Oxford University Press, 2010.
+- Steven H. Strogatz. Nonlinear Dynamics and Chaos: with Applications to Physics, Biology, Chemistry, and Engineering. Westview Press, 2014.
 
-Material from the University of Oxford undergraduate course `B8.5 Graph Theory`
+- Mark Newman. Networks: An Introduction. Oxford University Press, 2010.
+
+- Material from the University of Oxford undergraduate course `B8.5 Graph Theory`
+
+A manuscript explaining in more details our experience is under Review by the journal *Network Science*. You can find the manuscript http://www.dtc.ox.ac.uk/people/14/klimmf/manuscripts/2017KlimmMaier_NetworkScienceSummerSchool_Manuscript.pdf "here".
 
 Some of the graph plots were created with the tikz-network package https://github.com/hackl/tikz-network
 
